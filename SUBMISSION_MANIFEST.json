@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-25T14:27:18.631Z",
+  "exportedAt": "2026-09-25T14:32:44.273Z",
   "sourceBaseCommit": "cf10697da6e73e5e1197e8af9d591431678276bb",
   "sourceIncludesUncommittedWork": true,
   "knownSecretScan": "passed",
@@ -16,9 +16,19 @@
       "sha256": "49ff7ca62bc09e9612eb2845448f97383b55c1ccd48b3a70ab070c276d68ed33"
     },
     {
+      "path": ".github/workflows/pages.yml",
+      "bytes": 576,
+      "sha256": "deb205bd94c00b222b13571ce71d3c043a8434bca4d02bca96b5f9b3780d0e5e"
+    },
+    {
       "path": ".gitignore",
       "bytes": 86,
       "sha256": "91db58fe1dbec2e5a5fc0993f7d4dea95689bc186ab894080ab85644a22d4a2d"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5223,
+      "sha256": "d0d6cc4882aa87cae74c5d9787b75cfe30850b415606063618474d2073861c3b"
     },
     {
       "path": "assets/brand/launchlab-okx-avatar.png",
@@ -226,6 +236,11 @@
       "sha256": "5e0d4d15603a4fb8957ed90e48f72b5d9cf20bdc92e6b2d95cb4f64aa8175bb4"
     },
     {
+      "path": "docs/submission/README.md",
+      "bytes": 5223,
+      "sha256": "d0d6cc4882aa87cae74c5d9787b75cfe30850b415606063618474d2073861c3b"
+    },
+    {
       "path": "docs/submission/build-period.md",
       "bytes": 2451,
       "sha256": "ae53a96268053ede81f82aff22d5c992d934e21cb1e9bd15a164d966d16ba616"
@@ -234,11 +249,6 @@
       "path": "docs/submission/judges.md",
       "bytes": 2556,
       "sha256": "f9baa33a3a0057b2312692f70613eb1dbafe98ce542bf9e8863b30f50501e8ba"
-    },
-    {
-      "path": "docs/submission/README.md",
-      "bytes": 5223,
-      "sha256": "d0d6cc4882aa87cae74c5d9787b75cfe30850b415606063618474d2073861c3b"
     },
     {
       "path": "docs/user-journey.md",
@@ -379,11 +389,6 @@
       "path": "package.json",
       "bytes": 1438,
       "sha256": "c765af02f700552a370c3d34a94ccdbcc3adfee78dfcfca9010e131c38d1922c"
-    },
-    {
-      "path": "README.md",
-      "bytes": 5223,
-      "sha256": "d0d6cc4882aa87cae74c5d9787b75cfe30850b415606063618474d2073861c3b"
     },
     {
       "path": "scripts/agent-demo.mjs",
