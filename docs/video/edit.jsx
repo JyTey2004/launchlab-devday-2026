@@ -24,7 +24,7 @@ export default async ({project}) => {
    <media file={logo} x={50} y={33} width={38} height={38} fit="contain" />
    <text x={104} y={34} width={500} height={42} fontFamily="Montserrat" fontSize={24} fontWeight={600} color="#f7f3ff">launchlab.</text>
    <text x={50} y={101} width={1180} height={35} fontFamily="Montserrat" fontSize={16} letterSpacing={2} color="#be91ed">{s.kicker}</text>
-   <text x={50} y={143} width={1180} height={105} fontFamily="Montserrat" fontSize={42} fontWeight={650} color="#f7f3ff">{s.title}</text>
+   <text x={50} y={143} width={1180} height={105} fontFamily="Montserrat" fontSize={42} fontWeight={600} color="#f7f3ff">{s.title}</text>
    {shot ? <frame x={48} y={258} width={740} height={380} layout="none" background="#18131f" radius={16}>
       <media file={shot} x={10} y={10} width={720} height={360} fit="contain" />
     </frame> : <rect x={50} y={256} width={1180} height={360} fill="#171120" radius={18}/>}

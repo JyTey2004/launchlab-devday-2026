@@ -1,5 +1,7 @@
 # LaunchLab
 
+[Watch the 3:15 product demonstration](https://jytey2004.github.io/launchlab-devday-2026/video.html)
+
 [Open the public judge walkthrough](https://jytey2004.github.io/launchlab-devday-2026/) · [Source checks](https://github.com/JyTey2004/launchlab-devday-2026/actions)
 
 **Give your agent a repository. Get a live experiment and evidence about what people tried.**

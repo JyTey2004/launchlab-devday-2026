@@ -1,5 +1,7 @@
 # Judge walkthrough
 
+[Watch the 3:15 product demonstration](https://jytey2004.github.io/launchlab-devday-2026/video.html)
+
 LaunchLab turns a supported GitHub repository into a live, instrumented validation pilot, then returns measured results to the founder's agent.
 
 ## Entry points
