@@ -51,9 +51,9 @@
   {
     "title": "Why OKX and X Layer",
     "kicker": "INTEGRATION / VERIFIED BOUNDARIES",
-    "body": "O K X provides a marketplace entry point for another agent to discover and request LaunchLab. Our provider is registered and the free pilot was submitted for listing review. Today's free task attempt was blocked by an O K X zero-fee funding error, so the marketplace round trip remains unverified. Separately, an X Layer testnet x four oh two payment to the readiness endpoint has been verified.",
+    "body": "O K X provides a marketplace entry point for agents to discover and request LaunchLab. Our provider is registered, but its listing review was rejected because a test task went unanswered. A separate free task attempt also hit a zero-fee funding error. The marketplace round trip remains unverified. Separately, an X Layer testnet x four oh two payment to the readiness endpoint has been verified.",
     "screen": null,
-    "voiceSeconds": 23.365397
+    "voiceSeconds": 23.733696
   },
   {
     "title": "From shipped code to measured learning",

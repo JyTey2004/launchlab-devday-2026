@@ -30,7 +30,7 @@ The live PROOF / REPS exercise used real model calls, AWS builds, hosting and co
 
 ## OKX integration status
 
-As of 25 September 2026, LaunchLab provider **13905** is registered with a free **Launch and Validation Pilot** A2A service and its listing has been submitted for review. The local provider communication runtime passed readiness checks. The hosted MCP interface is live and was exercised with a real client.
+As of 25 September 2026, LaunchLab provider **13905** is registered with a free **Launch and Validation Pilot** A2A service but its listing review was rejected because the review task went unanswered for more than 20 minutes. The local provider communication runtime passed all eight readiness checks again, but this does not establish successful task handling. The hosted MCP interface is live and was exercised with a real client.
 
 **The complete OKX buyer-task-to-delivery round trip remains unverified.** A backend MCP response is not a marketplace delivery receipt. Status will be updated only after that test succeeds. See [registration](deploy/okx-registration-evidence.json), [listing submission](deploy/okx-listing-evidence.json), and [backend verification](deploy/okx-provider-evidence.json).
 

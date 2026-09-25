@@ -1,0 +1,16 @@
+{
+  "checkedAt": "2026-09-25T14:47:10.842Z",
+  "agentId": "13905",
+  "status": "listing_rejected",
+  "reason": "The OKX review task went unanswered for more than 20 minutes.",
+  "communicationRecheck": {
+    "ready": true,
+    "cliVersion": "0.2.16",
+    "latest": true,
+    "checksPassed": 8
+  },
+  "limitations": [
+    "Readiness diagnostics do not prove task execution or delivery.",
+    "Listing has not been resubmitted."
+  ]
+}
