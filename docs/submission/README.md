@@ -1,5 +1,7 @@
 # LaunchLab
 
+[Open the public judge walkthrough](https://jytey2004.github.io/launchlab-devday-2026/) · [Source checks](https://github.com/JyTey2004/launchlab-devday-2026/actions)
+
 **Give your agent a repository. Get a live experiment and evidence about what people tried.**
 
 LaunchLab is an OKX Dev Day prototype for founders testing web products. It detects a supported GitHub app, proposes measurement hooks and feedback questions, asks for approval, builds an isolated copy, and returns an AWS Amplify preview. Agents can retrieve progress and measured results over HTTPS/MCP.

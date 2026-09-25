@@ -9,7 +9,7 @@ LaunchLab turns a supported GitHub repository into a live, instrumented validati
 - [Original deployed store](https://preview.d2xy2zo7ya2zs2.amplifyapp.com/): protected founder preview; do not expect anonymous access.
 - [Hosted service health](https://launchlab-13-214-10-243.sslip.io/health): public health only; workflow APIs require authorization.
 
-Open the public judge walkthrough linked from the repository homepage. It includes an interactive storefront copy and a redacted read-only snapshot of the actual internal-test report. Collection is disabled in this public copy; the original authenticated deployment retains live collection. No passwords, founder report keys or backend credentials are included.
+Open the [public judge walkthrough](https://jytey2004.github.io/launchlab-devday-2026/). It includes an interactive storefront copy and a redacted read-only snapshot of the actual internal-test report. Collection is disabled in this public copy; the original authenticated deployment retains live collection. No passwords, founder report keys or backend credentials are included.
 
 ## Demonstration sequence
 

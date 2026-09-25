@@ -1,0 +1,65 @@
+[
+  {
+    "title": "The next era of founders",
+    "kicker": "LAUNCHLAB / OKX DEV DAY 2026",
+    "body": "A new era of founders is here. Building a first version is easier than ever. But after the code comes a harder question. Will anybody use it? LaunchLab turns a repository into a measurable product experiment, so a founder can learn from a working product instead of another prediction.",
+    "screen": null,
+    "voiceSeconds": 16.150522
+  },
+  {
+    "title": "Start with a repo and a question",
+    "kicker": "01 / DEFINE THE EXPERIMENT",
+    "body": "Our example is Proof Reps, a crypto-themed gymwear store. Its source is a public GitHub repository. LaunchLab detects the Vite framework and pins the exact source commit. The founder defines the audience and the question: will gym-goers explore products, add an item to their bag, and complete a simulated checkout?",
+    "screen": "store-desktop.png",
+    "voiceSeconds": 18.154875
+  },
+  {
+    "title": "Approve the measurement plan",
+    "kicker": "02 / ADD TRACKING AND FEEDBACK",
+    "body": "A GPT-driven agent proposes bounded code changes, event hooks, and feedback questions. The founder reviews the plan before it runs. The approved changes are applied to an isolated build copy. LaunchLab does not silently rewrite the original repository. The experiment keeps a record of the version and measurement plan.",
+    "screen": null,
+    "voiceSeconds": 19.308435
+  },
+  {
+    "title": "A real deployed storefront",
+    "kicker": "03 / BUILD AND DEPLOY",
+    "body": "The approved application is built in AWS CodeBuild and hosted on Amplify. This is a real capture of the deployed store. Visitors can browse the collection, choose a size, add an item, and try the demo checkout. The checkout is simulated. No money moves, and no real order is placed.",
+    "screen": "store-desktop.png",
+    "voiceSeconds": 17.336735
+  },
+  {
+    "title": "Ask users what the clicks cannot tell you",
+    "kicker": "04 / COLLECT FEEDBACK",
+    "body": "In the instrumented deployment, visitors choose whether to share usage activity. They can then submit feedback about the experience. This capture shows an internal quality check of the feedback form. It verifies delivery and persistence. It is deliberately labelled as internal testing, and is not presented as a real customer's opinion.",
+    "screen": "feedback-desktop.png",
+    "voiceSeconds": 19.32458
+  },
+  {
+    "title": "Count actions separately from sessions",
+    "kicker": "05 / INSPECT THE EVIDENCE",
+    "body": "LaunchLab separates repeat actions from sessions and labels traffic cohorts. The current test snapshot records two browser sessions, two checkout actions, and one saved feedback response. Earlier repeated actions were not captured, and that limitation is disclosed. These numbers prove that the collection path works. They do not prove customer demand.",
+    "screen": null,
+    "voiceSeconds": 21.220635
+  },
+  {
+    "title": "Results your agent can retrieve",
+    "kicker": "06 / CLOSE THE LEARNING LOOP",
+    "body": "The hosted service exposes nine authenticated tools over H T T P and M C P. A founder's agent can retrieve deployment details, status, activity, and feedback tied to the experiment. The dashboard provides the detailed view. The public judge walkthrough includes an interactive store copy and a redacted, read-only results snapshot, without private credentials.",
+    "screen": null,
+    "voiceSeconds": 22.199184
+  },
+  {
+    "title": "Why OKX and X Layer",
+    "kicker": "INTEGRATION / VERIFIED BOUNDARIES",
+    "body": "O K X provides a marketplace entry point for another agent to discover and request LaunchLab. Our provider is registered and the free pilot was submitted for listing review. Today's free task attempt was blocked by an O K X zero-fee funding error, so the marketplace round trip remains unverified. Separately, an X Layer testnet x four oh two payment to the readiness endpoint has been verified.",
+    "screen": null,
+    "voiceSeconds": 23.365397
+  },
+  {
+    "title": "From shipped code to measured learning",
+    "kicker": "LAUNCHLAB / TEY JIA YE",
+    "body": "LaunchLab's next milestone is the verified marketplace handoff, followed by real founder pilots. Recruitment, incentives, and automatic reward payments are future work. The current product focuses on one dependable loop: repository, approved instrumentation, deployment, and evidence. Explore the public walkthrough and source to see what works today, and exactly what remains to be built.",
+    "screen": "store-mobile.png",
+    "voiceSeconds": 24.14195
+  }
+]

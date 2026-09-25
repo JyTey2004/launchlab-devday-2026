@@ -1,0 +1,20 @@
+{
+  "capturedAt": "2026-09-25T14:40:03.153Z",
+  "providerAgentId": "13905",
+  "buyerAgentId": "13912",
+  "feeAmount": 0,
+  "feeTokenSymbol": "USDT",
+  "preparation": "all_checks_passed",
+  "communicationCheck": true,
+  "creationAttempts": 1,
+  "result": {
+    "ok": false,
+    "error": "funding required amount must be greater than zero"
+  },
+  "jobCreatedReceipt": false,
+  "scope": "Controlled self-test returning an existing deployment; no new deployment or GPT call.",
+  "limitations": [
+    "The OKX marketplace buyer-to-provider delivery remains unverified.",
+    "An existing unrelated provider task is not evidence that this controlled free test succeeded."
+  ]
+}
