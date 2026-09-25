@@ -1,0 +1,73 @@
+{
+  "draftOnly": false,
+  "preparedAt": "2026-09-25T07:53:28.524Z",
+  "role": "asp",
+  "name": "LaunchLab",
+  "description": "LaunchLab helps founders deploy GitHub projects with tracking and feedback collection to test product ideas.",
+  "descriptionStatus": "Confirmed by the founder before service collection.",
+  "picture": "https://static.okx.com/cdn/web3/wallet/marketplace/headimages/agent/avatar/b6cc9943-39bf-4e1d-872d-a149df4d9f0c.png",
+  "avatarSource": "assets/brand/launchlab-okx-avatar.png",
+  "avatarSha256": "05b8fadac3a6675416fc221bf3fac0625f1a15bb97854031aa1c4b9078b7a2f7",
+  "registrationPrecheck": {
+    "canCreate": true,
+    "existingProviders": 0
+  },
+  "identityCreated": true,
+  "listed": false,
+  "agentId": "13905",
+  "services": [
+    {
+      "serviceName": "Launch and Validation Pilot",
+      "serviceType": "A2A",
+      "fee": "0",
+      "subscription": [],
+      "serviceDescription": "For founders testing product ideas: deploy a public static HTML or supported Vite/npm GitHub project with tracking and feedback collection, then retrieve measured activity and submitted feedback.",
+      "serviceGuide": "Provide a public GitHub URL, validation goal and target audience. LaunchLab asks for missing details and prepares a plan for approval before deployment. The pilot covers one supported project preview per task. Hosting duration and resource scope must be agreed before launch; hosting does not expire automatically. Share no secrets. Tester recruitment and reward payments are excluded."
+    }
+  ],
+  "nextStep": "Await OKX listing review. Marketplace buyer/task binding to the hosted workflow and a complete delivery test remain pending before public operation.",
+  "profileConfirmed": true,
+  "billingConfirmed": {
+    "serviceType": "A2A",
+    "billing": "per-launch",
+    "fee": "0",
+    "subscription": [],
+    "scope": "Controlled hackathon pilot; LaunchLab operator covers AWS and model usage."
+  },
+  "servicesConfirmed": true,
+  "updatedAt": "2026-09-25T08:12:04.632Z",
+  "validation": {
+    "passed": true,
+    "findings": [],
+    "semanticReview": "Passed: brand name, single-sentence profile, distinct noun-phrase service name, supported capability and audience.",
+    "checkedAt": "2026-09-25T08:02:34.852Z"
+  },
+  "finalConfirmationPending": false,
+  "registrationPayloadDigest": "269a31a471f4a72f7b9859c27bf600cc3840301296dd9eab1b5d495c826c555a",
+  "registration": {
+    "createdAt": "2026-09-25T08:06:34.559Z",
+    "agentId": "13905",
+    "chainIndex": 196,
+    "transactionHash": "0x6568f2f911486ce7b0860cf7e22417dcb29f44fa012136e3518521c757f155ea",
+    "listed": false,
+    "communicationReady": true,
+    "communication": {
+      "checkedAt": "2026-09-25T08:08:28.050Z",
+      "runtimeVersion": "0.2.16",
+      "provider": "codex",
+      "runsOn": "local Mac",
+      "checksPassed": 8,
+      "activeClients": 1
+    }
+  },
+  "listing": {
+    "agentId": "13905",
+    "submittedAt": "2026-09-25T08:11:24.090Z",
+    "submitted": true,
+    "status": "submitted_for_review",
+    "published": false,
+    "preferredLanguage": "en-US",
+    "submissionAttempts": 1,
+    "communicationCheck": "Ready, confirmed by the activation command"
+  }
+}

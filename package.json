@@ -1,0 +1,39 @@
+{
+  "name": "okx-launch-lab",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Versioned product experiments for agents: repository to preview to rewarded feedback.",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "dev": "node --env-file-if-exists=.env --watch src/server.mjs",
+    "start": "node --env-file-if-exists=.env src/server.mjs",
+    "mcp": "node src/mcp.mjs",
+    "test": "node --test test/*.test.mjs",
+    "check": "node scripts/check.mjs",
+    "demo:agent": "node scripts/agent-demo.mjs",
+    "demo:merch": "node scripts/merch-demo.mjs",
+    "inspect:repo": "node --env-file-if-exists=.env scripts/inspect-repo.mjs",
+    "deploy:repo": "node --env-file-if-exists=.env scripts/managed-deploy.mjs",
+    "setup:ai": "node scripts/setup-ai.mjs",
+    "agent:validate": "node --env-file-if-exists=.env scripts/validation-agent.mjs",
+    "mcp:merch": "node examples/proof-of-reps/mcp.mjs",
+    "mcp:merch:online": "node examples/proof-of-reps/remote-mcp.mjs",
+    "scaffold": "node scripts/scaffold.mjs",
+    "seller": "node --env-file-if-exists=.env src/seller-server.mjs",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.30.0",
+    "@okxweb3/x402-core": "0.1.0",
+    "@okxweb3/x402-evm": "0.2.1",
+    "@okxweb3/x402-express": "0.1.1",
+    "express": "5.2.1",
+    "zod": "4.6.5"
+  },
+  "devDependencies": {
+    "prettier": "3.5.2"
+  }
+}

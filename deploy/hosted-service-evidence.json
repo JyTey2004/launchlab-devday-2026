@@ -1,0 +1,61 @@
+{
+  "at": "2026-09-22T08:02:24.262Z",
+  "origin": "https://launchlab-13-214-10-243.sslip.io",
+  "instanceId": "i-0943bbca39367b203",
+  "releaseDigest": "00b68d165c907a9b0954fe2ac5afc67d8ccd9b59f4d967c3949627cb1d0671d3",
+  "tls": "Publicly trusted certificate verified by Node fetch and curl; no certificate bypass.",
+  "health": 200,
+  "anonymousApi": 401,
+  "mcpWorkflowTools": 9,
+  "sourceRepository": "https://github.com/mdn/beginner-html-site-styled",
+  "sourceCommit": "6c7a360ddb4a0d75be06044bf8a914f260ff10c7",
+  "intake": {
+    "jobId": "job_ff66e15900f8e9b4319222f7",
+    "workflowId": "wf_b5b7f8c3277e2853bca1",
+    "status": "needs_input",
+    "duplicateReusedJob": true
+  },
+  "isolation": {
+    "separateCaller": true,
+    "workflowRead": 404,
+    "reportRead": 404,
+    "previewAccess": 404,
+    "jobRead": 404,
+    "mutation": 404
+  },
+  "restart": {
+    "workerStoppedBeforeEnqueue": true,
+    "apiAndWorkerRestarted": true,
+    "sameQueuedJobCompleted": true,
+    "previousWorkflowPersisted": true,
+    "jobId": "job_023d92db8e60076b3359aa6b",
+    "workflowId": "wf_493d43d679a16a68f92a"
+  },
+  "billing": {
+    "modelCalls": 0,
+    "customerDeployments": 0,
+    "payments": 0,
+    "baseAwsHostRunning": true
+  },
+  "limitations": [
+    "Smoke test ends at clarification; no new live GPT plan or customer build from this host was executed.",
+    "Single-host demo, public GitHub only, operator-triggered backups, no currency spending cap or automatic environment expiry.",
+    "OKX AI registration and x402 workflow billing are not implemented by this step."
+  ],
+  "backup": {
+    "type": "operator-triggered",
+    "createdAt": "2026-09-22T08:01:10+00:00",
+    "bytes": 5830,
+    "encryption": "AES256",
+    "sourceDatabaseIntegrity": "ok",
+    "fullRestoreTested": false
+  },
+  "verification": {
+    "nodeTests": 100,
+    "pythonTests": 10,
+    "syntaxChecks": "passed",
+    "releaseExcludedModelAndCallerKeys": true,
+    "publicArchiveDownloadBytes": 62204,
+    "privateProofRepsRepositoryAccess": "blocked without a GitHub connection"
+  }
+}

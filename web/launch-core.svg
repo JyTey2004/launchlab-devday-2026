@@ -1,0 +1,184 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="650" viewBox="0 0 680 650" fill="none">
+  <defs>
+    <radialGradient id="halo">
+      <stop stop-color="#aa44ed" stop-opacity=".23" />
+      <stop offset=".55" stop-color="#672089" stop-opacity=".08" />
+      <stop offset="1" stop-color="#08070e" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient
+      id="glass-left"
+      x1="260"
+      y1="165"
+      x2="320"
+      y2="415"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop stop-color="#c699ff" stop-opacity=".63" />
+      <stop offset=".43" stop-color="#813fc2" stop-opacity=".6" />
+      <stop offset="1" stop-color="#261538" stop-opacity=".4" />
+    </linearGradient>
+    <linearGradient
+      id="glass-right"
+      x1="390"
+      y1="160"
+      x2="430"
+      y2="405"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop stop-color="#d576f1" stop-opacity=".85" />
+      <stop offset=".52" stop-color="#67398d" stop-opacity=".6" />
+      <stop offset="1" stop-color="#29192f" stop-opacity=".8" />
+    </linearGradient>
+    <linearGradient id="top" x1="242" y1="225" x2="432" y2="315" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#dab9ff" stop-opacity=".85" />
+      <stop offset=".55" stop-color="#b775ed" stop-opacity=".2" />
+      <stop offset="1" stop-color="#f789d2" stop-opacity=".7" />
+    </linearGradient>
+    <linearGradient id="edge" x1="210" y1="140" x2="474" y2="440" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#debdff" />
+      <stop offset=".45" stop-color="#a572f3" />
+      <stop offset=".76" stop-color="#fa81c9" />
+      <stop offset="1" stop-color="#9b50c1" stop-opacity=".15" />
+    </linearGradient>
+    <linearGradient id="orbit" x1="90" y1="220" x2="560" y2="375" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#754acf" stop-opacity="0" />
+      <stop offset=".28" stop-color="#ae78ed" />
+      <stop offset=".68" stop-color="#f485d8" />
+      <stop offset="1" stop-color="#9854b7" stop-opacity=".05" />
+    </linearGradient>
+    <linearGradient id="beam" x1="341" y1="80" x2="341" y2="512" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#b273ff" stop-opacity="0" />
+      <stop offset=".38" stop-color="#ca95ff" stop-opacity=".6" />
+      <stop offset=".64" stop-color="#ee82d6" stop-opacity=".9" />
+      <stop offset="1" stop-color="#b273ff" stop-opacity="0" />
+    </linearGradient>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="8" />
+    </filter>
+    <filter id="small-glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="2.5" />
+    </filter>
+  </defs>
+  <ellipse cx="343" cy="302" rx="306" ry="287" fill="url(#halo)" />
+  <g stroke="#9956c4" stroke-opacity=".15" stroke-width=".7">
+    <path d="m90 424 250-135 248 135-248 142Z" />
+    <path
+      d="m146 454 249-136M202 486 248-141M259 520 249-140M150 391l245 140M208 359l245 140M265 328l245 140"
+    />
+    <path d="m58 441 282 160 282-160M110 470l230 130 230-130" />
+  </g>
+  <ellipse cx="342" cy="460" rx="138" ry="40" fill="#b038d9" opacity=".09" filter="url(#glow)" />
+  <path
+    d="m195 438 145-81 147 81-147 83Z"
+    fill="#a447dd"
+    fill-opacity=".035"
+    stroke="#c78af3"
+    stroke-opacity=".24"
+  />
+  <path d="m228 438 112-63 114 63-114 64Z" stroke="#bb7ce1" stroke-opacity=".26" />
+  <path
+    d="m258 438 82-45 83 45-83 47Z"
+    fill="#a45dd6"
+    fill-opacity=".07"
+    stroke="#cc89eb"
+    stroke-opacity=".33"
+  />
+  <path d="M341 60v473" stroke="url(#beam)" stroke-width="1" />
+  <path d="M341 180v317" stroke="url(#beam)" stroke-width="9" opacity=".4" filter="url(#glow)" />
+  <g transform="rotate(-25 340 295)">
+    <ellipse
+      cx="340"
+      cy="295"
+      rx="244"
+      ry="80"
+      stroke="#8c65c7"
+      stroke-opacity=".24"
+      stroke-width=".7"
+    />
+    <ellipse
+      cx="340"
+      cy="295"
+      rx="267"
+      ry="100"
+      stroke="#9562c1"
+      stroke-opacity=".14"
+      stroke-dasharray="3 9"
+    />
+    <path d="M96 295c0-44 109-80 244-80s244 36 244 80" stroke="url(#orbit)" stroke-width="1.5" />
+  </g>
+  <g stroke="url(#edge)" stroke-width="1">
+    <path d="m341 126 113 148-113 58-113-58Z" fill="url(#top)" />
+    <path d="m341 126-113 148 113 147Z" fill="url(#glass-left)" />
+    <path d="m341 126 113 148-113 147Z" fill="url(#glass-right)" />
+    <path d="m228 274 113 58 113-58-113 147Z" fill="#461b62" fill-opacity=".24" />
+    <path d="m341 154-92 121 92 119 92-119Z" stroke-opacity=".3" />
+    <path d="m341 182-71 93 71 91 71-91Z" stroke-opacity=".23" />
+    <path d="m341 212-48 63 48 62 48-62Z" fill="#bf72fa" fill-opacity=".07" stroke-opacity=".4" />
+  </g>
+  <path
+    d="m341 126-113 148 113 58 113-58-113-148Z"
+    stroke="#d8aaff"
+    stroke-opacity=".28"
+    stroke-width="4"
+    filter="url(#small-glow)"
+  />
+  <path
+    d="m228 274 113 58 113-58M341 332v89M341 126v148"
+    stroke="#e9bafa"
+    stroke-opacity=".6"
+    stroke-width="1"
+  />
+  <path
+    d="m249 297 92 47 92-47M263 322l78 39 78-39M280 345l61 31 61-31"
+    stroke="#eca5e6"
+    stroke-opacity=".23"
+    stroke-width=".8"
+  />
+  <path
+    d="m341 102 137 173-137 175-137-175Z"
+    stroke="#b47deb"
+    stroke-opacity=".23"
+    stroke-width=".6"
+  />
+  <path
+    d="m341 114 125 161-125 160-125-160Z"
+    stroke="#d08eed"
+    stroke-opacity=".1"
+    stroke-dasharray="2 7"
+  />
+  <g transform="rotate(-25 340 295)">
+    <path d="M584 295c0 44-109 80-244 80S96 339 96 295" stroke="url(#orbit)" stroke-width="2.5" />
+    <path
+      d="M584 295c0 44-109 80-244 80S96 339 96 295"
+      stroke="url(#orbit)"
+      stroke-width="7"
+      opacity=".5"
+      filter="url(#glow)"
+    />
+  </g>
+  <g fill="#e1b1ff">
+    <circle cx="341" cy="126" r="2.5" />
+    <circle cx="228" cy="274" r="2" />
+    <circle cx="454" cy="274" r="2" />
+    <circle cx="341" cy="421" r="2" />
+    <circle cx="512" cy="204" r="2" />
+    <circle cx="156" cy="388" r="2" />
+    <circle cx="545" cy="319" r="1" opacity=".6" />
+    <circle cx="207" cy="174" r="1" opacity=".5" />
+    <circle cx="459" cy="133" r="1" opacity=".7" />
+    <circle cx="199" cy="468" r="1" opacity=".5" />
+  </g>
+  <g stroke="#d19ded" stroke-opacity=".65">
+    <path d="M480 412v10m-5-5h10M186 209v8m-4-4h8M404 91v7m-3.5-3.5h7" />
+    <path d="M126 279h18m-9-9v18" opacity=".4" />
+  </g>
+  <path
+    d="M139 164h53l36 44M479 315h64l22-23M168 444h50l21-16"
+    stroke="#bb86d8"
+    stroke-opacity=".26"
+    stroke-width=".7"
+    stroke-dasharray="3 4"
+  />
+  <circle cx="341" cy="126" r="10" fill="#dda9ff" opacity=".4" filter="url(#glow)" />
+  <circle cx="454" cy="274" r="9" fill="#ff94d6" opacity=".5" filter="url(#glow)" />
+</svg>

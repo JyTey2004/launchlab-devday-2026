@@ -1,0 +1,32 @@
+{
+  "draftOnly": true,
+  "note": "Human-readable listing preparation, not an official registration schema or proof of registration.",
+  "name": "LaunchLab Static Readiness",
+  "description": "Inspect a public static repository at a pinned Git commit and return its compatibility with the LaunchLab preview adapter.",
+  "serviceType": "A2MCP candidate",
+  "method": "POST",
+  "path": "/v1/readiness",
+  "publicUrl": null,
+  "inputExample": { "repoUrl": "https://github.com/OWNER/REPOSITORY", "ref": "main" },
+  "payment": {
+    "defaultMode": "free",
+    "optionalMode": "x402",
+    "defaultNetwork": "eip155:1952",
+    "proposedPrice": "$0.01",
+    "liveSettlementVerified": false
+  },
+  "returns": [
+    "pinned source",
+    "static-package checks",
+    "configured chain",
+    "next action",
+    "limitations"
+  ],
+  "doesNotInclude": [
+    "deployment",
+    "security audit",
+    "contract execution",
+    "human recruitment",
+    "reward payout"
+  ]
+}

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Hello X Layer · Experiment</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header><span class="logo">✳</span> HELLO X LAYER <span class="tag">EXPERIMENT</span></header>
+    <main>
+      <div class="eyebrow">A SMALL IDEA, READY TO TRY</div>
+      <h1>Find your next<br />agent superpower.</h1>
+      <p class="lead">
+        Explore three example services for a project on X Layer. Choose one and tell us what you
+        would use it for.
+      </p>
+      <p class="notice">
+        Prototype directory · These sample services do not execute trades, deploy contracts or
+        charge money.
+      </p>
+      <section id="services">
+        <button data-service="Protocol guide">
+          <span>01 / LEARN</span>
+          <h2>Protocol guide ↗</h2>
+          <p>Turn a protocol's docs into a clear integration plan.</p></button
+        ><button data-service="Launch readiness">
+          <span>02 / SHIP</span>
+          <h2>Launch readiness ↗</h2>
+          <p>Check what a project needs before users try it.</p></button
+        ><button data-service="Human feedback">
+          <span>03 / LEARN AGAIN</span>
+          <h2>Human feedback ↗</h2>
+          <p>Discover where real people get stuck.</p>
+        </button>
+      </section>
+      <section id="selection" hidden>
+        <h2 id="chosen"></h2>
+        <label for="goal">What would you ask this service to do?</label
+        ><textarea id="goal" rows="3" placeholder="I am building… and I need help with…"></textarea
+        ><button id="send">Try this request →</button>
+        <p id="result" role="status"></p>
+      </section>
+      <footer>
+        X Layer Testnet · Chain 1952<br />Local usability experiment. No wallet connection required.
+      </footer>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

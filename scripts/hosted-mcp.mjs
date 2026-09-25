@@ -1,0 +1,10 @@
+import { readFile } from 'node:fs/promises';
+const file = process.argv[2] || process.env.LAUNCHLAB_CLIENT_FILE;
+if (!file) throw new Error('Pass the private caller credential file path.');
+const config = JSON.parse(await readFile(file, 'utf8'));
+const origin = new URL(config.origin);
+if (origin.protocol !== 'https:' || origin.username || origin.password || !/^ll_[A-Za-z0-9_-]{43}$/.test(config.token)) throw new Error('Invalid hosted caller configuration.');
+process.env.LAUNCHLAB_URL = origin.origin;
+process.env.LAUNCHLAB_API_TOKEN = config.token;
+process.env.LAUNCHLAB_HOSTED = 'true';
+await import('../src/mcp.mjs');

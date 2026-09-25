@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "testedAt": "2026-09-22T06:24:27.738747+00:00",
+  "status": "testnet_self_payment_verified",
+  "endpoint": "http://127.0.0.1:4312/v1/readiness",
+  "network": "eip155:1952",
+  "tokenSymbol": "USD₮0",
+  "amountHuman": "0.01",
+  "amountAtomic": "10000",
+  "asset": "0x9e29b3aada05bf2d2c827af80bd28dc0b9b4fb0c",
+  "recipient": "0xa9fca1080ad23aaffaf04348b035aa81bc1bf876",
+  "paymentId": "pay_3be9757e29357d3400ff8966",
+  "paymentRequestsSubmitted": 1,
+  "cliStatus": "success",
+  "paidReportDelivered": true,
+  "paidReport": {
+    "adapter": "static",
+    "configuredChainId": 1952,
+    "deployed": false,
+    "limitations": [
+      "Static package inspection only; no code execution or contract audit.",
+      "No deployment, user recruitment or payout is included in this API call."
+    ],
+    "nextAction": "Import this pinned source into LaunchLab and run launchlab_deploy to prepare and verify a local preview.",
+    "packageReady": true,
+    "productionReady": false,
+    "project": "Hello X Layer",
+    "schemaVersion": 1,
+    "service": "launchlab-static-readiness"
+  },
+  "liveFacilitator": {
+    "verifyIsValid": true,
+    "settleSuccess": true,
+    "settleStatus": "timeout",
+    "transaction": "0x9e8407fbacb38a3ba79858b7fa6830cff6e159c2f1238371fed60fe4aad0c615",
+    "note": "The SDK returned success=true with status=timeout. Settlement was independently confirmed from the chain receipt; neither field alone was treated as finality proof."
+  },
+  "settlementVerified": true,
+  "chainReceipt": {
+    "checkedAt": "2026-09-22T06:25:48.461257+00:00",
+    "rpc": "https://testrpc.xlayer.tech/terigon",
+    "chainId": 1952,
+    "transactionHash": "0x9e8407fbacb38a3ba79858b7fa6830cff6e159c2f1238371fed60fe4aad0c615",
+    "receiptPresent": true,
+    "status": "0x1",
+    "blockNumber": 41599432,
+    "confirmations": 78,
+    "gasUsed": "73859",
+    "transactionFrom": "0x40817a0d9043732d48823c05ab2ffb643ef8d90a",
+    "transactionTo": "0x9e29b3aada05bf2d2c827af80bd28dc0b9b4fb0c",
+    "transfers": [
+      {
+        "token": "0x9e29b3aada05bf2d2c827af80bd28dc0b9b4fb0c",
+        "from": "0xa9fca1080ad23aaffaf04348b035aa81bc1bf876",
+        "to": "0xa9fca1080ad23aaffaf04348b035aa81bc1bf876",
+        "amountAtomic": "10000",
+        "logIndex": 1
+      }
+    ],
+    "approvedTransferVerified": true
+  },
+  "walletTransactionStatus": "SUCCESS",
+  "balancesAfter": [
+    {
+      "symbol": "USD₮0",
+      "tokenAddress": "0x9e29b3aada05bf2d2c827af80bd28dc0b9b4fb0c",
+      "balance": "10",
+      "chainIndex": "1952"
+    },
+    {
+      "symbol": "USDC_TEST",
+      "tokenAddress": "0xcb8bf24c6ce16ad21d707c9505421a17f2bec79d",
+      "balance": "10",
+      "chainIndex": "1952"
+    }
+  ],
+  "limitations": [
+    "Buyer and recipient are the same wallet; this confirms payment plumbing, not revenue or a sale between accounts.",
+    "This call buys a static-package readiness report only; no deployment, GPT request, campaign or tester payout occurred.",
+    "The endpoint was loopback-only; public HTTPS hosting and an OKX AI listing remain unverified.",
+    "Duplicate/replay handling and separate buyer/merchant accounts still require acceptance testing.",
+    "Quote balance lookup remained unavailable; wallet balances were read separately.",
+    "Existing automated test results are local working-tree evidence, not new hosted CI results."
+  ]
+}

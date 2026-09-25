@@ -1,0 +1,398 @@
+{
+  "at": "2026-09-24T12:44:33.345326+00:00",
+  "scope": "Hackathon step 1: real hosted repository-to-feedback demo; internal QA only",
+  "service": {
+    "origin": "https://launchlab-13-214-10-243.sslip.io",
+    "releaseDigest": "4a2d4b5008947333214aba8e080deb6145482ccfa295af446b2f319860d94d9e",
+    "releaseCommandId": "d830584a-3a4d-4d85-80fa-ac8e61f90667",
+    "releaseVerified": "SSM Success, exit 0"
+  },
+  "source": {
+    "repoUrl": "https://github.com/JyTey2004/launchlab-proof-reps-public-demo",
+    "requestedRef": "23eeae76ba6839f0b49ebf2b347796bc2b1f7ccc",
+    "commitSha": "23eeae76ba6839f0b49ebf2b347796bc2b1f7ccc",
+    "framework": "vite",
+    "visibility": "public sanitized demo copy",
+    "originalRepository": "https://github.com/JyTey2004/launchlab-proof-reps-demo",
+    "originalRemainsPrivate": true,
+    "repositoryModifiedByInstrumentation": false
+  },
+  "workflow": {
+    "id": "wf_2a278987f6a8e6d72562",
+    "revision": 3,
+    "experimentId": "exp_6e14da0a74a631193507",
+    "planDigest": "991aefe97e3b7e84bd061eb924398e1ee0dd5705183ccdf0583a33e32e0c17cf",
+    "instrumentationDigest": "e83f280adabab59d1ef33e8822b4b47b52d9849d4a695ff35954e57a715881c5"
+  },
+  "delivery": {
+    "website": "https://preview.d2xy2zo7ya2zs2.amplifyapp.com/",
+    "report": "https://preview.d2xy2zo7ya2zs2.amplifyapp.com/__launchlab/results.html",
+    "previewRequiresLogin": true,
+    "reportRequiresAdditionalKey": true
+  },
+  "planningAttempts": [
+    {
+      "id": "exp_b3de8e2f81e01b8f2c4c",
+      "status": "blocked",
+      "calls": [
+        {
+          "attempt": 1,
+          "status": "received",
+          "provider": "openai",
+          "model": "gpt-5.4-2026-03-05",
+          "responseId": "resp_0911d1f563427de6016ab5118286a087d0ab346f3d7b5a2a9d",
+          "usage": {
+            "input_tokens": 3599,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 2097,
+            "output_tokens_details": {
+              "reasoning_tokens": 1366
+            },
+            "total_tokens": 5696
+          },
+          "generatedAt": "2026-09-24T12:03:36.878Z"
+        },
+        {
+          "attempt": 2,
+          "status": "received",
+          "provider": "openai",
+          "model": "gpt-5.4-2026-03-05",
+          "responseId": "resp_0f8b8e809264e0d8016ab5119919ec87d098d563b652b51eed",
+          "usage": {
+            "input_tokens": 3615,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 2816
+            },
+            "output_tokens": 2391,
+            "output_tokens_details": {
+              "reasoning_tokens": 1683
+            },
+            "total_tokens": 6006
+          },
+          "generatedAt": "2026-09-24T12:04:02.435Z"
+        }
+      ],
+      "instrumentationDigest": null
+    },
+    {
+      "id": "exp_6e14da0a74a631193507",
+      "status": "planned",
+      "calls": [
+        {
+          "attempt": 1,
+          "status": "received",
+          "provider": "openai",
+          "model": "gpt-5.4-2026-03-05",
+          "responseId": "resp_012ccbec9146107d016ab51264815487d0a072890f424faeb8",
+          "usage": {
+            "input_tokens": 3730,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 1779,
+            "output_tokens_details": {
+              "reasoning_tokens": 1034
+            },
+            "total_tokens": 5509
+          },
+          "generatedAt": "2026-09-24T12:07:19.321Z"
+        }
+      ],
+      "instrumentationDigest": "e83f280adabab59d1ef33e8822b4b47b52d9849d4a695ff35954e57a715881c5"
+    }
+  ],
+  "deployment": {
+    "id": "dep_6e14da0a74a631193507",
+    "status": "ready",
+    "resourceName": "llh-proof-reps-pilot-31193507",
+    "buildId": "llh-proof-reps-pilot-31193507:db95e661-b4c3-40ea-983d-491b3600080d",
+    "amplifyJobId": "1",
+    "verification": {
+      "at": "2026-09-24T12:21:36.818Z",
+      "verifiedFiles": 15,
+      "anonymousStatus": 401,
+      "reportAnonymousStatus": 401,
+      "reportProjectMatched": true,
+      "browserInteractionTested": false
+    },
+    "sourceArchiveHash": "6e2c5a2c90980b6f9c08eeb0a0551efe475b48153f0b0cbb8ca21398c1a65adb",
+    "resources": {
+      "ApiBase": "https://0qfvp0ds6g.execute-api.ap-southeast-1.amazonaws.com",
+      "Table": "llh-proof-reps-pilot-31193507-Records-17T6E2XJKJL1M",
+      "AppId": "d2xy2zo7ya2zs2",
+      "Bucket": "llh-proof-reps-pilot-31193507-assets-qyjrbvsvomnk",
+      "Builder": "llh-proof-reps-pilot-31193507",
+      "Url": "https://preview.d2xy2zo7ya2zs2.amplifyapp.com"
+    },
+    "blocker": null,
+    "timeline": [
+      {
+        "at": "2026-09-24T12:07:19.458Z",
+        "status": "planned",
+        "message": "Repository inspected and commit pinned. No cloud resources or builds created."
+      },
+      {
+        "at": "2026-09-24T12:08:30.121Z",
+        "status": "queued",
+        "message": "Confirmed deployment, AWS cost scope and bounded repair policy."
+      },
+      {
+        "at": "2026-09-24T12:08:31.109Z",
+        "status": "provisioning",
+        "message": "Preparing a dedicated private preview, build worker and experiment backend."
+      },
+      {
+        "at": "2026-09-24T12:08:56.636Z",
+        "status": "blocked",
+        "message": "Cloud provisioning failed. Inspect this deployment\u2019s CloudFormation events; existing projects were not changed."
+      },
+      {
+        "at": "2026-09-24T12:13:16.075Z",
+        "status": "provisioning",
+        "message": "Preparing a dedicated private preview, build worker and experiment backend."
+      },
+      {
+        "at": "2026-09-24T12:13:30.563Z",
+        "status": "blocked",
+        "message": "Cloud provisioning failed. Inspect this deployment\u2019s CloudFormation events; existing projects were not changed."
+      },
+      {
+        "at": "2026-09-24T12:17:14.667Z",
+        "status": "provisioning",
+        "message": "Preparing a dedicated private preview, build worker and experiment backend."
+      },
+      {
+        "at": "2026-09-24T12:18:13.148Z",
+        "status": "provisioning",
+        "message": "Dedicated AWS resources are ready."
+      },
+      {
+        "at": "2026-09-24T12:18:13.153Z",
+        "status": "preparing_source",
+        "message": "Fetching only the pinned repository revision; no repository code runs on the operator host."
+      },
+      {
+        "at": "2026-09-24T12:18:15.049Z",
+        "status": "preparing_source",
+        "message": "Pinned source package uploaded to this project\u2019s private build bucket."
+      },
+      {
+        "at": "2026-09-24T12:18:16.107Z",
+        "status": "building",
+        "message": "Building in AWS. Only explicitly allowed package and build-command repairs may be applied."
+      },
+      {
+        "at": "2026-09-24T12:18:18.162Z",
+        "status": "blocked",
+        "message": "aws codebuild failed."
+      },
+      {
+        "at": "2026-09-24T12:21:18.973Z",
+        "status": "packaging",
+        "message": "Isolated build passed. Validating the artifact and adding project-specific observation."
+      },
+      {
+        "at": "2026-09-24T12:21:22.194Z",
+        "status": "publishing",
+        "message": "Publishing the validated artifact to this project\u2019s password-protected preview."
+      },
+      {
+        "at": "2026-09-24T12:21:31.419Z",
+        "status": "verifying",
+        "message": "Verifying HTTPS assets, privacy and the project\u2019s feedback service."
+      },
+      {
+        "at": "2026-09-24T12:21:36.818Z",
+        "status": "ready",
+        "message": "Deployment verified. Share its preview access with testers; read its private results through LaunchLab."
+      }
+    ]
+  },
+  "builds": [
+    "llh-proof-reps-pilot-31193507:db95e661-b4c3-40ea-983d-491b3600080d"
+  ],
+  "amplifyJobs": [
+    {
+      "id": "1",
+      "status": "SUCCEED",
+      "startTime": "2026-09-24T20:21:24.528000+08:00",
+      "endTime": "2026-09-24T20:21:26.641000+08:00"
+    }
+  ],
+  "browser": {
+    "at": "2026-09-24T12:29:39.421Z",
+    "website": "https://preview.d2xy2zo7ya2zs2.amplifyapp.com",
+    "status": "passed",
+    "browser": "Chromium",
+    "anonymousCollectionBeforeConsent": 0,
+    "collectionAfterDecline": 0,
+    "products": 3,
+    "simulatedCheckout": true,
+    "noActualPayment": true,
+    "feedbackSubmitted": true,
+    "feedbackResubmitted": true,
+    "testCohort": true,
+    "eventTypes": [
+      "page_view",
+      "collection_nav_clicked",
+      "item_added_to_bag",
+      "bag_button_clicked",
+      "demo_checkout_completed"
+    ],
+    "selectedAnswers": [
+      {
+        "question": "answer:preferred_checkout_method",
+        "answer": "other_method"
+      },
+      {
+        "question": "answer:main_purchase_blocker",
+        "answer": "just_testing"
+      }
+    ],
+    "mobileWidth": 390,
+    "horizontalOverflow": false,
+    "pageErrors": [],
+    "screenshots": [
+      "store-desktop.png",
+      "feedback-desktop.png",
+      "store-mobile.png"
+    ]
+  },
+  "report": {
+    "at": "2026-09-24T12:41:30.249Z",
+    "privateReport": true,
+    "invalidKeyStatus": 401,
+    "desktopAndMobilePassed": true,
+    "pageErrors": [],
+    "organic": {
+      "sessions": 0,
+      "responses": 0
+    },
+    "internalQa": {
+      "sessions": 1,
+      "responses": 1,
+      "primaryActions": 1,
+      "funnel": [
+        {
+          "id": "page_view",
+          "label": "Opted-in visit",
+          "sessions": 1
+        },
+        {
+          "id": "collection_nav_clicked",
+          "label": "Collection nav clicked",
+          "sessions": 1
+        },
+        {
+          "id": "item_added_to_bag",
+          "label": "Item added to bag",
+          "sessions": 1
+        },
+        {
+          "id": "bag_button_clicked",
+          "label": "Bag button clicked",
+          "sessions": 1
+        },
+        {
+          "id": "demo_checkout_completed",
+          "label": "Demo checkout completed",
+          "sessions": 1
+        }
+      ]
+    },
+    "internalTestVerdict": "Instrumentation check only",
+    "syntheticProductRecommendationsWithheld": true,
+    "repeatedFeedbackCountedOnce": true,
+    "externalMcpReportMatched": true,
+    "project": "dep_6e14da0a74a631193507",
+    "experimentId": "exp_6e14da0a74a631193507",
+    "sourceCommit": "23eeae76ba6839f0b49ebf2b347796bc2b1f7ccc"
+  },
+  "agent": {
+    "at": "2026-09-24T12:42:26.766Z",
+    "health": 200,
+    "anonymousApi": 401,
+    "externalMcpAnalysis": true,
+    "sameIdempotentJobReturned": true,
+    "jobId": "job_72e955a4957bb2bf90507520",
+    "analysisCached": true,
+    "scope": "instrumentation-only",
+    "productSuggestions": 0,
+    "organicAnalysis": "no_evidence",
+    "organicModelCallSkipped": true
+  },
+  "analysis": {
+    "status": "generated",
+    "cohort": "test",
+    "cachedOnFinalVerification": true,
+    "analysisScope": "instrumentation-only",
+    "suggestions": [],
+    "receipt": {
+      "provider": "openai",
+      "model": "gpt-5.4-2026-03-05",
+      "responseId": "resp_012bd01de7ad01e9016ab5181c163c87d09dfc91f2df494be9",
+      "usage": {
+        "input_tokens": 1755,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 735,
+        "output_tokens_details": {
+          "reasoning_tokens": 39
+        },
+        "total_tokens": 2490
+      },
+      "generatedAt": "2026-09-24T12:31:32.044Z"
+    },
+    "fingerprint": "48a989929334798e2d5aeb03ca7fae9b1f64ae9c01a5b3ed2003171586ff8932"
+  },
+  "usage": {
+    "actualPlanningCalls": 3,
+    "rejectedPlanningCalls": 2,
+    "successfulPlanningCalls": 1,
+    "actualAnalysisCalls": 1,
+    "organicAnalysisCalls": 0,
+    "customerBuilds": 1,
+    "amplifyPublishJobs": 1,
+    "actualPayments": 0,
+    "hostingContinuesUntilRemoved": true
+  },
+  "verification": {
+    "nodeTestsPassed": 103,
+    "pythonTestsPassed": 16,
+    "syntax": "passed",
+    "CIForThisRelease": "Not run; verification is local tests plus live cloud/browser checks",
+    "browserInteractionEvidence": "Separate from the pipeline HTTP-only verification record above; its historical browserInteractionTested=false is preserved."
+  },
+  "fixesAppliedAndReleased": [
+    "GPT correction receives the rejected proposal and precise hook validation requirements; received candidates and call receipts are retained.",
+    "Hosted provisioning permissions cover required API Gateway tagging, CodeBuild polling and collector code updates, scoped to demo resources.",
+    "Collector handles exact-origin browser preflight for sessions/events/feedback/report; future readiness checks verify these routes.",
+    "Hosted analysis returns its analysis payload without reexecuting deployment reconciliation.",
+    "Internal test and agent reports cannot recommend product changes or claim directional customer feedback, even at higher response counts."
+  ],
+  "failedAttemptHandling": {
+    "firstPlanningExperiment": "Two rejected GPT proposals were retained; a revised explicit planning attempt succeeded.",
+    "provisioning": "Two rolled-back stacks were removed after checking retained bucket/table were empty. Their empty retained resources were removed.",
+    "buildPolling": "Recovered the existing successful build after a scoped permission fix; no second build was started.",
+    "firstBrowserAttempts": "Two browser attempts exposed failed preflight; neither recorded sessions or feedback. Code-only collector update fixed it.",
+    "analysisDelivery": "First analysis was cached but its job result was overwritten by workflow state. After fixing the worker, the same cached analysis was returned with no additional model call."
+  },
+  "limitations": [
+    "One scripted internal QA session and response; zero organic customer sessions or feedback at verification time.",
+    "Checkout is simulated. No wallet connection, payment, fulfilled order or demand validation is claimed.",
+    "Public static/Vite repository only. Private GitHub authorization, SSR and server-side user secrets are not supported by this hosted flow.",
+    "Instrumentation changes the disposable build copy, not the original GitHub repository.",
+    "This run required operator fixes and explicit resumptions; it is not evidence of unattended success across arbitrary repositories.",
+    "OKX AI registration/listing and paid workflow integration remain pending; no OKX deployment or payment was performed in this step.",
+    "No recruitment, incentive pool or tester payouts; the founder must invite actual testers.",
+    "No automated environment expiry or hard dollar spending cap. The existing base host and live project continue incurring usage charges.",
+    "No matching LaunchLab Linear issue or issue-linked Notion specification was found during bootstrap; no canonical delivery state was changed."
+  ]
+}

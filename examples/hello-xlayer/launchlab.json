@@ -1,0 +1,8 @@
+{
+  "name": "Hello X Layer",
+  "description": "A tiny agent service directory. Can a first-time visitor find an agent and understand how to use it?",
+  "adapter": "static",
+  "entry": "index.html",
+  "files": ["index.html", "app.js", "style.css"],
+  "chainId": 1952
+}

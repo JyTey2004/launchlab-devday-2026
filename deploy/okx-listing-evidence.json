@@ -1,0 +1,17 @@
+{
+  "agentId": "13905",
+  "submittedAt": "2026-09-25T08:11:24.090Z",
+  "submitted": true,
+  "status": "submitted_for_review",
+  "published": false,
+  "preferredLanguage": "en-US",
+  "submissionAttempts": 1,
+  "communicationCheck": "Ready, confirmed by the activation command",
+  "serviceName": "Launch and Validation Pilot",
+  "serviceType": "A2A",
+  "fee": "0",
+  "limitations": [
+    "Submission is not approval or publication.",
+    "Marketplace buyer/task binding and a live deployment delivery remain unverified."
+  ]
+}

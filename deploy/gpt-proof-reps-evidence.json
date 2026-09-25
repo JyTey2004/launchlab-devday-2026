@@ -1,0 +1,145 @@
+{
+  "at": "2026-09-20T07:38:04.304Z",
+  "experimentId": "exp_8dd2a27b024dbf60c078",
+  "deploymentId": "dep_8dd2a27b024dbf60c078",
+  "source": {
+    "repoUrl": "https://github.com/JyTey2004/launchlab-proof-reps-demo",
+    "requestedRef": "478fd89280e407ca978c6c3425014901f70dc68e",
+    "commitSha": "478fd89280e407ca978c6c3425014901f70dc68e"
+  },
+  "planDigest": "93aac5fba94b8a01bf24230fedfc6c44da81ea24e9974651167af897771ea325",
+  "instrumentationDigest": "48cd9098e88408edde7f5b6e3773bb1f722c700a6d0ca7468d05cfa597d28377",
+  "website": "https://preview.d3g0puchww8hfn.amplifyapp.com",
+  "report": "https://preview.d3g0puchww8hfn.amplifyapp.com/__launchlab/results.html",
+  "buildId": "ll-proof-reps-validation-bf60c078:5e06dbb5-78c8-4149-9e28-d71ad6fb4f79",
+  "sourceChanges": [
+    {
+      "path": "index.html",
+      "beforeHash": "ef4c7fa09eb52e396597e5570e45c69f1055ce85b90a64e0e1975c02fc8cab95",
+      "afterHash": "86181977d695eda27d65c9d51539d7dcb6d00cec4d5c964ac0e93843b5d728ed"
+    },
+    {
+      "path": "src/main.js",
+      "beforeHash": "f17c663c42970970775c334e754c2886b18ec3675427f4a9f770e4522172eb6c",
+      "afterHash": "b64a2b2152df9da397b0a8bff7f6014ebd256ba952377bc29c5acfb35430cc03"
+    }
+  ],
+  "modelPlanning": [
+    {
+      "attempt": 1,
+      "status": "received",
+      "provider": "openai",
+      "model": "gpt-5.4-2026-03-05",
+      "responseId": "resp_026177774596ab99016aaf876f02dc87d1a1a290082c221627",
+      "usage": {
+        "input_tokens": 3578,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1816,
+        "output_tokens_details": {
+          "reasoning_tokens": 1143
+        },
+        "total_tokens": 5394
+      },
+      "generatedAt": "2026-09-20T07:13:04.789Z"
+    }
+  ],
+  "modelAnalysis": {
+    "receipt": {
+      "provider": "openai",
+      "model": "gpt-5.4-2026-03-05",
+      "responseId": "resp_0fa30e31f5886e94016aaf8cc0686887d18ebf51063e4c2047",
+      "usage": {
+        "input_tokens": 1598,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 726,
+        "output_tokens_details": {
+          "reasoning_tokens": 39
+        },
+        "total_tokens": 2324
+      },
+      "generatedAt": "2026-09-20T07:35:34.886Z"
+    },
+    "cached": true,
+    "scope": "instrumentation-only",
+    "productRecommendationsWithheld": true,
+    "observations": [
+      {
+        "text": "There was 1 opted-in session and 1 recorded feedback response in the 7-day window.",
+        "evidenceIds": [
+          "sessions",
+          "responses"
+        ]
+      },
+      {
+        "text": "The single recorded session included add-to-bag, bag open, and demo checkout completion events.",
+        "evidenceIds": [
+          "event:added_to_bag",
+          "event:opened_bag",
+          "event:demo_checkout_complete"
+        ]
+      },
+      {
+        "text": "Funnel reach was 1 at each reported step: page view, added to bag, opened bag, and demo checkout complete.",
+        "evidenceIds": [
+          "funnel:page_view",
+          "funnel:added_to_bag",
+          "funnel:opened_bag",
+          "funnel:demo_checkout_complete"
+        ]
+      }
+    ],
+    "limitations": [
+      "This cohort contains internal or agent testing. Product recommendations are withheld; collect actual user feedback before assessing demand or preferences.",
+      "Sample is extremely small: 1 session and 1 response.",
+      "The only response explicitly says it is internal QA / synthetic, so it should not be treated as customer demand or human preference.",
+      "Primary actions indicate interaction, not verified sales or completed outcomes.",
+      "The checkout is simulated, so demo_checkout_complete reflects intent only, not a real payment or completed order.",
+      "Card-vs-crypto preference is not observable from behavior in this setup and can only be learned from the survey.",
+      "Sessions are opted-in browser visits, not verified unique people, and self-reports do not verify identity."
+    ]
+  },
+  "verification": {
+    "at": "2026-09-20T07:32:51.710Z",
+    "verifiedFiles": 15,
+    "anonymousStatus": 401,
+    "reportAnonymousStatus": 401,
+    "reportProjectMatched": true,
+    "browserInteractionTested": false,
+    "deploymentId": "dep_8dd2a27b024dbf60c078",
+    "retryCreatedExtraBuildsOrJobs": false,
+    "providerCounts": {
+      "builds": 1,
+      "jobs": 1
+    },
+    "liveCollectorReadback": true,
+    "syntheticTestInput": true,
+    "repeatedFeedbackCountedOnce": true,
+    "internalQa": {
+      "sessions": 1,
+      "primaryActions": 1,
+      "responses": 1
+    },
+    "organic": {
+      "sessions": 0,
+      "responses": 0
+    },
+    "organicAnalysisSkipped": true
+  },
+  "liveModelRequests": {
+    "planning": 1,
+    "analysis": 2,
+    "note": "First analysis rejected for unsupported evidence reference. Output schema tightened; second analysis succeeded. Failed attempt token usage unavailable."
+  },
+  "browserLimit": "Protected Amplify preview could not be opened by the in-app browser (ERR_BLOCKED_BY_CLIENT). Live assets and collector were verified through authenticated HTTP; no claim of remote browser interaction.",
+  "tests": {
+    "node": 75,
+    "python": 10
+  },
+  "sourceRepositoryWritten": false
+}

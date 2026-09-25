@@ -1,0 +1,106 @@
+{
+  "at": "2026-09-24T14:33:50.591Z",
+  "origin": "https://launchlab-13-214-10-243.sslip.io",
+  "workflowId": "wf_2a278987f6a8e6d72562",
+  "checks": {
+    "health": 200,
+    "anonymousDenied": 401,
+    "remoteMcpTools": [
+      "launchlab_service_info",
+      "launchlab_submit_project",
+      "launchlab_answer_questions",
+      "launchlab_approve_deployment",
+      "launchlab_check_progress",
+      "launchlab_get_results",
+      "launchlab_analyze_results",
+      "launchlab_resume_project",
+      "launchlab_get_preview_access"
+    ],
+    "existingDeliveryMatches": true
+  },
+  "cohorts": {
+    "organic": {
+      "matchesExistingApi": true,
+      "sessions": 1,
+      "goalSessions": 1,
+      "recordedGoalActions": 0,
+      "legacyGoalSessions": 1,
+      "feedbackResponses": 0
+    },
+    "incentivized": {
+      "matchesExistingApi": true,
+      "sessions": 0,
+      "goalSessions": 0,
+      "recordedGoalActions": 0,
+      "legacyGoalSessions": 0,
+      "feedbackResponses": 0
+    },
+    "agent": {
+      "matchesExistingApi": true,
+      "sessions": 0,
+      "goalSessions": 0,
+      "recordedGoalActions": 0,
+      "legacyGoalSessions": 0,
+      "feedbackResponses": 0
+    },
+    "test": {
+      "matchesExistingApi": true,
+      "sessions": 2,
+      "goalSessions": 2,
+      "recordedGoalActions": 2,
+      "legacyGoalSessions": 1,
+      "feedbackResponses": 1
+    }
+  },
+  "website": "https://preview.d2xy2zo7ya2zs2.amplifyapp.com",
+  "intake": {
+    "workflowId": "wf_0e944c99e8f742874711",
+    "jobId": "job_939891c4a29e7a1ffec9c230",
+    "sourceCommit": "23eeae76ba6839f0b49ebf2b347796bc2b1f7ccc",
+    "state": "needs_input",
+    "questionIds": [
+      "hypothesis",
+      "audience"
+    ],
+    "sameReceiptOnRetry": true
+  },
+  "scope": {
+    "newDeployments": 0,
+    "requestedModelCalls": 0,
+    "payments": 0,
+    "marketplaceRoundTrip": false,
+    "note": "Existing deployment and real reports read through the new remote interface; optional new intake ends at questions."
+  },
+  "release": {
+    "digest": "24ded8d7b0d94cdd8649a287d9a8b9c9e88c539b68bdf8e3fa9702aef57cb5d8",
+    "commandId": "000c9a70-4fbf-4376-9a41-c45573ebaf34",
+    "status": "Success",
+    "backupStatus": "Success"
+  },
+  "usage": {
+    "before": {
+      "activeJobs": [],
+      "workflows": 5,
+      "modelCalls": 4,
+      "deployments": 1
+    },
+    "after": {
+      "activeJobs": [],
+      "workflows": 6,
+      "modelCalls": 4,
+      "deployments": 1
+    }
+  },
+  "tests": {
+    "node": 108,
+    "passed": 108,
+    "syntax": "passed",
+    "cloudModelAndSourceInLocalTests": "controlled fixtures"
+  },
+  "limitations": [
+    "No live OKX marketplace registration, task messages, delivery or payment was performed.",
+    "Buyer credentials are operator-provisioned; verified OKX buyer/task binding remains pending.",
+    "No new customer cloud build was run through the bridge; the existing live deployment and report were read, and new intake stopped at questions.",
+    "Source changes remain local and uncommitted; existing remote CI is not verification of this release."
+  ]
+}

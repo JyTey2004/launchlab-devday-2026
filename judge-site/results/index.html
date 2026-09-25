@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow"><title>LaunchLab — Results</title>
+  <link rel="icon" href="./logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./results.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to results</a>
+<aside class="sidebar" aria-label="Results workspace">
+  <a class="brand" href="https://launchlab.stardive.xyz/" aria-label="LaunchLab home"><img src="./logo.svg" width="28" height="28" alt=""><span>launchlab<span class="brand-dot">.</span></span></a>
+  <div class="project-card"><span class="project-mark" aria-hidden="true">P</span><div><strong id="project-name">Your experiment</strong><span class="muted small">Experiment workspace</span></div></div>
+  <p class="nav-label">RESULTS</p>
+  <nav aria-label="Dashboard sections">
+    <button data-view="overview" aria-current="page" disabled><span class="nav-icon" aria-hidden="true">◫</span>Overview</button>
+    <button data-view="activity" disabled><span class="nav-icon" aria-hidden="true">↗</span>Activity</button>
+    <button data-view="feedback" disabled><span class="nav-icon" aria-hidden="true">◌</span>Feedback<span class="nav-count" id="feedback-count">—</span></button>
+    <button data-view="quality" disabled><span class="nav-icon" aria-hidden="true">◇</span>Data quality</button>
+  </nav>
+  <div class="sidebar-bottom"><a href="../store/" class="project-link">Open project <span aria-hidden="true">↗</span></a><div class="privacy-note"><span class="status-dot"></span>Public test snapshot</div><button id="lock" class="quiet lock-button" hidden>Lock results</button></div>
+</aside>
+<div class="workspace">
+  <header class="topbar"><div class="breadcrumb">Workspace <span>/</span> <strong id="name">Experiment</strong></div><div class="topbar-actions"><span class="private-badge">Read-only snapshot</span><button id="lock-top" class="quiet" hidden>Lock</button></div></header>
+  <main id="main" tabindex="-1">
+    <div class="page-heading"><div><p class="eyebrow">LAUNCH. MEASURE. LEARN.</p><h1 id="view-title">Experiment overview</h1><p class="page-description" id="view-description">A clear view of what happened, and what to learn next.</p></div><button id="export" class="quiet" hidden>Export report ↓</button></div>
+    <section id="access" class="access-panel panel"><div class="access-symbol" aria-hidden="true">◇</div><p class="eyebrow">YOUR RESULTS, PRIVATELY</p><h2>Open your experiment</h2><p>See product activity and candid feedback in one place.</p><form id="login"><label for="key">Founder report key</label><input type="password" id="key" required autocomplete="off" placeholder="Enter your private key"><button class="primary">Open results <span aria-hidden="true">→</span></button></form><p class="small muted">Your key stays in this tab’s memory. Lock results when you’re finished.</p></section>
+    <div class="toolbar" id="controls" hidden><div class="filters"><label for="cohort">Audience<select id="cohort"><option value="organic">Unrewarded people</option><option value="incentivized">Incentivized people</option><option value="agent">Agents</option><option value="test">Internal tests</option></select></label><label for="days">Period<select id="days"><option value="7">Last 7 days</option><option value="30">Last 30 days</option></select></label></div><button id="refresh" class="quiet" aria-label="Refresh results"><span class="refresh-label">Refresh </span><span aria-hidden="true">↻</span></button></div>
+    <div class="sync-line"><span id="status" role="status" aria-live="polite">Ready to connect to your private report.</span><span id="audience-badge" class="audience-badge" hidden></span></div>
+    <div id="report" hidden>
+      <section data-panel="overview" aria-label="Overview">
+        <div class="brief panel"><span class="section-kicker">THE QUESTION WE’RE TESTING</span><p id="hypothesis"></p><div class="brief-meta"><span class="status-dot"></span>Recorded experiment<span class="divider">/</span><span id="revision"></span></div></div>
+        <div class="metrics" id="metrics"></div>
+        <div class="overview-grid"><section class="panel"><div class="panel-heading"><h2>Journey at a glance</h2><button class="text-button" data-goto="activity">View activity ↗</button></div><p class="muted small">Sessions reaching each step, including every preceding step.</p><div id="overview-funnel" class="funnel"></div></section><section class="insight-panel panel"><span class="section-kicker">WHAT THE EVIDENCE SAYS</span><h2 id="verdict"></h2><p id="verdict-note"></p><hr><h3>Next steps</h3><ol id="next"></ol></section></div>
+        <div class="panel footnote"><span aria-hidden="true">ⓘ</span><p>Two completed actions in one visit means <strong>2 actions and 1 session</strong>. Clicks on a disabled checkout do not complete an action. <button data-goto="quality" class="inline-button">How counting works ↗</button></p></div>
+      </section>
+      <section data-panel="activity" aria-label="Activity" hidden>
+        <div class="panel"><div class="panel-heading"><div><h2>Product actions</h2><p class="muted small">Repeat actions and session reach are measured separately.</p></div><span class="tag">Opt-in only</span></div><p id="coverage-notice" class="notice"></p><div class="table-wrap"><table><thead><tr><th scope="col">Event</th><th scope="col">Recorded actions</th><th scope="col">Sessions</th><th scope="col">Session reach</th></tr></thead><tbody id="event-rows"></tbody></table></div></div>
+        <div class="two-columns"><section class="panel"><h2>Cumulative journey</h2><p class="muted small">Session overlap, not chronological order or the reason someone stopped.</p><div id="activity-funnel" class="funnel"></div></section><section class="panel"><h2>Where visits came from</h2><p class="muted small">Source labels from opted-in sessions in this audience.</p><div id="sources"></div></section></div>
+      </section>
+      <section data-panel="feedback" aria-label="Feedback" hidden>
+        <div id="feedback-summary" class="notice"></div><div class="two-columns"><section class="panel"><h2>Stated interest</h2><p class="muted small">What respondents said. This is not purchase behavior.</p><div id="intent"></div></section><section class="panel"><h2>Main hesitation</h2><p class="muted small">Reported concerns to explore with intended users.</p><div id="blockers"></div></section></div>
+        <section class="panel"><h2>Your research questions</h2><div id="questions"></div></section><section class="panel"><div class="panel-heading"><h2>In their words</h2><span class="tag">Voluntary feedback</span></div><div id="comments"></div></section>
+      </section>
+      <section data-panel="quality" aria-label="Data quality" hidden>
+        <div class="two-columns"><section class="panel"><h2>Counting you can understand</h2><dl class="definitions"><dt>Recorded actions</dt><dd>Each accepted action has a unique ID. Two completed checkouts produce two actions. Retrying delivery of the same ID does not add another action.</dd><dt>Sessions</dt><dd>A browser session lasts up to 24 hours. Repeating an action does not add another session. Sessions are not verified unique people.</dd><dt>Feedback responses</dt><dd>One saved response per session. Resubmitting updates that response.</dd><dt>Earlier records</dt><dd>The previous tracker stored reach only. Earlier repeat actions are unavailable and are excluded from recorded action totals.</dd></dl></section><section class="panel"><h2>Measurement coverage</h2><div id="coverage"></div><h3>Audience separation</h3><div id="cohorts"></div><p class="muted small">These labels are self-reported, not proof of human identity.</p></section></div>
+        <section class="panel"><div class="panel-heading"><div><h2>Hosting traffic</h2><p class="muted small">All audiences · AWS requests include assets, bots and login failures. These are not visits.</p></div><span class="tag">Separate data source</span></div><div class="metrics" id="hosting"></div></section>
+        <section class="panel"><h2>Experiment details</h2><dl id="provenance" class="provenance"></dl><details><summary>Measurement limitations</summary><ul id="limits"></ul></details></section>
+      </section>
+    </div>
+    <footer class="workspace-footer"><span>Built to learn, not to guess.</span><span>LaunchLab / Results</span></footer>
+  </main>
+</div>
+<script type="module" src="./snapshot.js"></script>
+</body></html>

@@ -1,0 +1,131 @@
+{
+  "at": "2026-09-24T13:20:13.730641+00:00",
+  "dashboard": "https://preview.d2xy2zo7ya2zs2.amplifyapp.com/__launchlab/results.html",
+  "deployment": {
+    "at": "2026-09-24T13:10:55.707Z",
+    "appId": "d2xy2zo7ya2zs2",
+    "branchName": "preview",
+    "jobId": "2",
+    "collectorChangeSet": "launchlab-occurrence-counts-20260924",
+    "website": "https://preview.d2xy2zo7ya2zs2.amplifyapp.com"
+  },
+  "artifact": {
+    "beforeSha256": "4f66721cbb01203a1a33ab1540da8c2d154155f668907d544d01487328d1b1b4",
+    "afterSha256": "68a17afa14e375c6205fe47af20c3c418bcd6e0217035e311219ce07f9f7c334",
+    "changedFiles": [
+      "__launchlab/results.html",
+      "__launchlab/results.css",
+      "__launchlab/results.js",
+      "__launchlab/sdk.js",
+      "__launchlab/widget.js",
+      "__launchlab/logo.svg"
+    ],
+    "customerFilesUnchanged": true,
+    "files": 16
+  },
+  "verification": {
+    "at": "2026-09-24T13:13:01.914Z",
+    "job": {
+      "id": "2",
+      "status": "SUCCEED"
+    },
+    "assets": [
+      {
+        "file": "results.html",
+        "verified": true,
+        "cacheControl": "public, max-age=0, s-maxage=2"
+      },
+      {
+        "file": "results.css",
+        "verified": true,
+        "cacheControl": "public, max-age=0, s-maxage=2"
+      },
+      {
+        "file": "results.js",
+        "verified": true,
+        "cacheControl": "public, max-age=0, s-maxage=2"
+      },
+      {
+        "file": "sdk.js",
+        "verified": true,
+        "cacheControl": "public, max-age=0, s-maxage=2"
+      },
+      {
+        "file": "widget.js",
+        "verified": true,
+        "cacheControl": "public, max-age=0, s-maxage=2"
+      },
+      {
+        "file": "logo.svg",
+        "verified": true,
+        "cacheControl": "public, max-age=0, s-maxage=2"
+      }
+    ],
+    "browser": {
+      "twoCompletedCheckouts": true,
+      "additionalSessions": 1,
+      "additionalGoalSessions": 1,
+      "recordedGoalActions": 2,
+      "feedbackPreserved": true
+    },
+    "legacy": {
+      "testGoalSessions": 1,
+      "organicGoalSessions": 1,
+      "olderRepeatsNotFabricated": true
+    }
+  },
+  "retryVerification": {
+    "at": "2026-09-24T13:14:32.728Z",
+    "scope": "Same internal browser QA session",
+    "concurrentDuplicateBatches": 2,
+    "eventsPerBatch": 8,
+    "checkoutActionsAfterRetries": 2,
+    "sessionsAfterRetries": 2,
+    "existingInternalSessionIncluded": true,
+    "passed": true
+  },
+  "agentReport": {
+    "at": "2026-09-24T13:18:55.745Z",
+    "http": 200,
+    "workflowStatus": "ready",
+    "recordedGoalActions": 2,
+    "goalSessions": 2,
+    "legacyGoalSessions": 1,
+    "feedbackResponses": 1,
+    "agentReportMatchesDashboard": true
+  },
+  "hostedService": {
+    "releaseDigest": "94a5356f1ad9541af754cb86d90b33f6798634781f6c424ab09f66c51ecf53b9",
+    "commandId": "3a4882d1-d9af-4655-b842-0bbdf5e3eebc",
+    "verified": "SSM Success / exit 0"
+  },
+  "tests": {
+    "node": 104,
+    "python": 19,
+    "syntax": "passed"
+  },
+  "browserReview": {
+    "brandReference": "https://launchlab.stardive.xyz/",
+    "desktop": true,
+    "mobileWidth": 390,
+    "pageWidth": 390,
+    "navigationAndMobileLock": true,
+    "authenticatedReportVia": "Loopback read-only proxy to actual collector",
+    "liveStore": "Direct HTTPS Chrome tab, test=1",
+    "liveDashboard": "Direct HTTPS design/login page plus byte-for-byte asset verification"
+  },
+  "scope": {
+    "newCodeBuilds": 0,
+    "newModelCalls": 0,
+    "newPayments": 0,
+    "newTestSessions": 1,
+    "newFeedbackResponses": 0
+  },
+  "limits": [
+    "Earlier repeat actions were not stored and cannot be recovered.",
+    "Sessions are browser sessions, not verified unique people.",
+    "Goal events represent completed simulated checkouts, not clicks on disabled controls or real purchases.",
+    "Existing open pages must reload to use the new SDK.",
+    "Local changes remain uncommitted; no CI or canonical Linear completion is claimed."
+  ]
+}

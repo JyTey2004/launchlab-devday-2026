@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-09-20T16:10:42.187Z",
+  "localDate": "2026-09-21",
+  "timezone": "Asia/Singapore",
+  "status": "external_verification_blocked",
+  "merchant": "https://www.okx.com/api/v1/pay/mock-merchant/resource",
+  "approvedPayment": {
+    "network": "eip155:1952",
+    "amountHuman": "0.01",
+    "asset": "0xcb8bf24c6ce16ad21d707c9505421a17f2bec79d",
+    "recipient": "0x3509655ad99effc7f3f74205482b1cb337ca08f7",
+    "method": "one-time exact"
+  },
+  "primaryAttempt": {
+    "status": "pending",
+    "error": "facilitator non-terminal: HTTP 402",
+    "txHash": null,
+    "resourceDelivered": false
+  },
+  "compatibilityAttempt": {
+    "transport": "Documented legacy X-PAYMENT envelope around raw CLI proof",
+    "httpStatus": 500,
+    "error": "Internal error: [401] during [POST] to [http://okx-defi-sa-gateway-pro/api/v6/pay/x402/verify] [SaFacilitatorFeignApi#verify(X402VerifyReq)]: []",
+    "resourceDelivered": false
+  },
+  "walletVerification": {
+    "checkedAt": "2026-09-20T16:10:42.187Z",
+    "balances": [
+      {
+        "symbol": "USD₮0",
+        "balance": "10",
+        "chainIndex": "1952"
+      },
+      {
+        "symbol": "USDC_TEST",
+        "balance": "10",
+        "chainIndex": "1952"
+      }
+    ],
+    "recentTransactionCount": 2,
+    "recentOutgoingTransactions": 0,
+    "onlyFaucetDepositsObserved": true
+  },
+  "settlementVerified": false,
+  "transactionHash": null,
+  "launchlabSellerTested": false,
+  "limitations": [
+    "The official mock merchant returned an internal 401 from its verification service.",
+    "The current CLI payment header was ignored by the merchant; the legacy transport reached its verifier.",
+    "Wallet balances and recent history show no observed debit; there is no successful payment receipt.",
+    "No signatures, authorizations, session material or API keys are included in this record."
+  ],
+  "launchlabFacilitatorDiscovery": {
+    "configuredClientUsed": true,
+    "capabilityResponseValid": true,
+    "testnetNetwork": "eip155:1952",
+    "advertisedSchemes": [
+      "exact",
+      "aggr_deferred",
+      "upto"
+    ],
+    "signatureVerificationTested": false,
+    "settlementTested": false,
+    "limitation": "A supported-method response does not prove that credentials can verify or settle payments."
+  }
+}

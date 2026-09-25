@@ -1,0 +1,284 @@
+{
+  "capturedAt": "2026-09-25T14:23:19.360Z",
+  "config": {
+    "name": "PROOF / REPS",
+    "project": "dep_6e14da0a74a631193507",
+    "hypothesis": "Will gym-goers explore the products, add an item to the bag and finish the simulated checkout? Learn which payment method they would prefer and what would prevent a real purchase.",
+    "experiment": {
+      "id": "exp_6e14da0a74a631193507",
+      "sourceCommit": "23eeae76ba6839f0b49ebf2b347796bc2b1f7ccc",
+      "digest": "e83f280adabab59d1ef33e8822b4b47b52d9849d4a695ff35954e57a715881c5",
+      "events": [
+        {
+          "id": "collection_nav_clicked",
+          "label": "Collection nav clicked"
+        },
+        {
+          "id": "item_added_to_bag",
+          "label": "Item added to bag"
+        },
+        {
+          "id": "bag_button_clicked",
+          "label": "Bag button clicked"
+        },
+        {
+          "id": "demo_checkout_completed",
+          "label": "Demo checkout completed"
+        }
+      ],
+      "funnel": [
+        "collection_nav_clicked",
+        "item_added_to_bag",
+        "bag_button_clicked",
+        "demo_checkout_completed"
+      ],
+      "questions": [
+        {
+          "id": "preferred_checkout_method",
+          "label": "If this were a real purchase, which checkout method would you prefer?",
+          "kind": "choice",
+          "options": [
+            {
+              "id": "crypto_wallet",
+              "label": "Crypto wallet"
+            },
+            {
+              "id": "card",
+              "label": "Credit or debit card"
+            },
+            {
+              "id": "apple_google_pay",
+              "label": "Apple Pay or Google Pay"
+            },
+            {
+              "id": "other_method",
+              "label": "Another method"
+            }
+          ]
+        },
+        {
+          "id": "main_purchase_blocker",
+          "label": "What would be most likely to stop you from buying?",
+          "kind": "choice",
+          "options": [
+            {
+              "id": "price",
+              "label": "Price felt too high"
+            },
+            {
+              "id": "checkout_trust",
+              "label": "I would need more trust or clarity in checkout"
+            },
+            {
+              "id": "sizing_fit",
+              "label": "I would need more sizing or fit information"
+            },
+            {
+              "id": "product_interest",
+              "label": "The products were not compelling enough"
+            },
+            {
+              "id": "just_testing",
+              "label": "I was only testing the demo"
+            }
+          ]
+        },
+        {
+          "id": "improvement_feedback",
+          "label": "What would make you more likely to buy from this store?",
+          "kind": "text",
+          "options": []
+        }
+      ],
+      "limitations": [
+        "page_view is already collected automatically and is not repeated here; it can provide top-of-funnel traffic but not product-level exploration detail.",
+        "collection_nav_clicked undercounts exploration because visitors can scroll directly to the products without using the navigation link.",
+        "bag_button_clicked is a click-level signal from the bag button attribute hook; it should be interpreted as intent to inspect the bag, not as guaranteed modal visibility in every edge case.",
+        "demo_checkout_completed measures only a successful simulated checkout. It does not represent a wallet connection, payment, shipment, or verified sale.",
+        "There is no dedicated event for product card viewing or size selection, so product exploration is only approximated through navigation and add-to-bag behavior.",
+        "If testers use browser automation or developer tools outside the visible UI patterns, results may not perfectly reflect ordinary shopper behavior."
+      ]
+    }
+  },
+  "report": {
+    "project": "dep_6e14da0a74a631193507",
+    "generatedAt": 1790346198,
+    "days": 7,
+    "cohort": "test",
+    "experimentId": "exp_6e14da0a74a631193507",
+    "sourceCommit": "23eeae76ba6839f0b49ebf2b347796bc2b1f7ccc",
+    "eventCounts": [
+      {
+        "id": "collection_nav_clicked",
+        "label": "Collection nav clicked",
+        "sessions": 2,
+        "occurrences": 1,
+        "legacySessions": 1
+      },
+      {
+        "id": "item_added_to_bag",
+        "label": "Item added to bag",
+        "sessions": 2,
+        "occurrences": 2,
+        "legacySessions": 1
+      },
+      {
+        "id": "bag_button_clicked",
+        "label": "Bag button clicked",
+        "sessions": 2,
+        "occurrences": 2,
+        "legacySessions": 1
+      },
+      {
+        "id": "demo_checkout_completed",
+        "label": "Demo checkout completed",
+        "sessions": 2,
+        "occurrences": 2,
+        "legacySessions": 1
+      }
+    ],
+    "funnel": [
+      {
+        "id": "page_view",
+        "label": "Opted-in visit",
+        "sessions": 2
+      },
+      {
+        "id": "collection_nav_clicked",
+        "label": "Collection nav clicked",
+        "sessions": 2
+      },
+      {
+        "id": "item_added_to_bag",
+        "label": "Item added to bag",
+        "sessions": 2
+      },
+      {
+        "id": "bag_button_clicked",
+        "label": "Bag button clicked",
+        "sessions": 2
+      },
+      {
+        "id": "demo_checkout_completed",
+        "label": "Demo checkout completed",
+        "sessions": 2
+      }
+    ],
+    "questionResults": [
+      {
+        "id": "preferred_checkout_method",
+        "label": "If this were a real purchase, which checkout method would you prefer?",
+        "kind": "choice",
+        "options": [
+          {
+            "id": "crypto_wallet",
+            "label": "Crypto wallet",
+            "count": 0
+          },
+          {
+            "id": "card",
+            "label": "Credit or debit card",
+            "count": 0
+          },
+          {
+            "id": "apple_google_pay",
+            "label": "Apple Pay or Google Pay",
+            "count": 0
+          },
+          {
+            "id": "other_method",
+            "label": "Another method",
+            "count": 1
+          }
+        ],
+        "texts": []
+      },
+      {
+        "id": "main_purchase_blocker",
+        "label": "What would be most likely to stop you from buying?",
+        "kind": "choice",
+        "options": [
+          {
+            "id": "price",
+            "label": "Price felt too high",
+            "count": 0
+          },
+          {
+            "id": "checkout_trust",
+            "label": "I would need more trust or clarity in checkout",
+            "count": 0
+          },
+          {
+            "id": "sizing_fit",
+            "label": "I would need more sizing or fit information",
+            "count": 0
+          },
+          {
+            "id": "product_interest",
+            "label": "The products were not compelling enough",
+            "count": 0
+          },
+          {
+            "id": "just_testing",
+            "label": "I was only testing the demo",
+            "count": 1
+          }
+        ],
+        "texts": []
+      },
+      {
+        "id": "improvement_feedback",
+        "label": "What would make you more likely to buy from this store?",
+        "kind": "text",
+        "options": [],
+        "texts": []
+      }
+    ],
+    "sessions": 2,
+    "primaryActions": 2,
+    "primaryActionOccurrences": 2,
+    "primaryActionLegacySessions": 1,
+    "responses": 1,
+    "verdict": "Instrumentation check only",
+    "nextSteps": [
+      "Use these records to verify tracking and feedback delivery. Internal tests and agent activity do not establish customer demand.",
+      "Collect candid feedback from intended users before making product decisions."
+    ],
+    "measurementVersion": 2,
+    "occurrenceCoverage": {
+      "recorded": 8,
+      "legacySessions": 1
+    },
+    "sources": {
+      "direct": 2
+    },
+    "intent": {
+      "maybe": 1
+    },
+    "blockers": {
+      "trust": 1
+    },
+    "cohorts": {
+      "test": 2,
+      "organic": 1
+    },
+    "windowStart": 1789776000,
+    "limitations": [
+      "Primary actions indicate interaction, not verified sales or completed outcomes.",
+      "Action occurrences count accepted unique event IDs; retrying an ID does not add an action. Earlier session-only records cannot recover repeat counts.",
+      "The selected period includes sessions started since midnight UTC at its beginning. A session lasts up to 24 hours.",
+      "Funnel counts require all preceding events in a session; they do not establish chronological order or explain why someone stopped.",
+      "Sessions are opted-in browser visits, not verified unique people.",
+      "Audience labels and feedback are self-reported; this is not proof of human identity.",
+      "Records expire after 90 days. AWS metrics include assets, bots, owner visits and authentication failures.",
+      "page_view is already collected automatically and is not repeated here; it can provide top-of-funnel traffic but not product-level exploration detail.",
+      "collection_nav_clicked undercounts exploration because visitors can scroll directly to the products without using the navigation link.",
+      "bag_button_clicked is a click-level signal from the bag button attribute hook; it should be interpreted as intent to inspect the bag, not as guaranteed modal visibility in every edge case.",
+      "demo_checkout_completed measures only a successful simulated checkout. It does not represent a wallet connection, payment, shipment, or verified sale.",
+      "There is no dedicated event for product card viewing or size selection, so product exploration is only approximated through navigation and add-to-bag behavior.",
+      "If testers use browser automation or developer tools outside the visible UI patterns, results may not perfectly reflect ordinary shopper behavior.",
+      "Public snapshot: written responses are withheld. New interactions with the public store copy do not update this report."
+    ],
+    "comments": []
+  }
+}

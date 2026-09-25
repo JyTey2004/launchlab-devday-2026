@@ -1,0 +1,35 @@
+{
+  "at": "2026-09-25T08:09:55.755Z",
+  "agentId": "13905",
+  "name": "LaunchLab",
+  "service": {
+    "serviceName": "Launch and Validation Pilot",
+    "serviceType": "A2A",
+    "fee": "0",
+    "subscription": [],
+    "serviceDescription": "For founders testing product ideas: deploy a public static HTML or supported Vite/npm GitHub project with tracking and feedback collection, then retrieve measured activity and submitted feedback.",
+    "serviceGuide": "Provide a public GitHub URL, validation goal and target audience. LaunchLab asks for missing details and prepares a plan for approval before deployment. The pilot covers one supported project preview per task. Hosting duration and resource scope must be agreed before launch; hosting does not expire automatically. Share no secrets. Tester recruitment and reward payments are excluded."
+  },
+  "registration": {
+    "created": true,
+    "network": "X Layer",
+    "chainId": 196,
+    "transactionHash": "0x6568f2f911486ce7b0860cf7e22417dcb29f44fa012136e3518521c757f155ea",
+    "createAttempts": 1,
+    "listed": false
+  },
+  "communication": {
+    "ready": true,
+    "checkedAt": "2026-09-25T08:08:28.050Z",
+    "runtimeVersion": "0.2.16",
+    "provider": "codex",
+    "runsOn": "local Mac",
+    "checksPassed": 8,
+    "activeClients": 1
+  },
+  "limitations": [
+    "Registration is not marketplace listing approval.",
+    "Communication currently runs on the local Mac with Codex; this is not an always-on hosted provider deployment.",
+    "Marketplace buyer/task binding, end-to-end marketplace delivery and deployment payments remain unverified."
+  ]
+}

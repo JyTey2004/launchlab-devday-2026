@@ -1,0 +1,105 @@
+{
+  "version": 1,
+  "recordedAt": "2026-09-19T10:32:04.962Z",
+  "deploymentId": "dep_fe142ceeff55d349c06f",
+  "source": {
+    "repoUrl": "https://github.com/JyTey2004/launchlab-event-pass-demo",
+    "requestedRef": "HEAD",
+    "commitSha": "ada5409b55b8893f4a84a6761901e813b90ec398"
+  },
+  "resourceName": "ll-night-pass-d349c06f",
+  "resources": {
+    "ApiBase": "https://yudvt474v1.execute-api.ap-southeast-1.amazonaws.com",
+    "Table": "ll-night-pass-d349c06f-Records-1N0RHMYJMMVHK",
+    "AppId": "du18ezoxh0r24",
+    "Bucket": "ll-night-pass-d349c06f-assets-srou2de4feow",
+    "Builder": "ll-night-pass-d349c06f",
+    "Url": "https://preview.du18ezoxh0r24.amplifyapp.com"
+  },
+  "buildId": "ll-night-pass-d349c06f:32d30609-b9f1-42ad-bfe0-97968f727f19",
+  "amplifyJobId": "1",
+  "buildReport": {
+    "engine": "bounded-rules-v1",
+    "sourceCommit": "ada5409b55b8893f4a84a6761901e813b90ec398",
+    "changes": [
+      {
+        "type": "build_script",
+        "reason": "Vite dependency exists but the build command is missing.",
+        "to": "vite build"
+      },
+      {
+        "type": "package_update",
+        "name": "vite",
+        "from": "8.0.0",
+        "to": "8.3.0",
+        "reason": "Explicitly allowed stable build-tool refresh within its current major version."
+      },
+      {
+        "type": "lockfile",
+        "reason": "Generate an npm lockfile in the disposable build workspace."
+      }
+    ],
+    "status": "passed",
+    "node": "v22.23.2",
+    "outputs": [
+      {
+        "path": "assets/index-BpxI-g-b.js",
+        "sha256": "779bced66d5a7182bf3f28c67b9ef09712636bb5bf2acd15c66ca8bb19403ed1"
+      },
+      {
+        "path": "assets/index-Uo4A9kyJ.css",
+        "sha256": "4b16c210771d417853c9d1c4b8fdb449dddc07f2a709f5bc1c6324886efae6da"
+      },
+      {
+        "path": "index.html",
+        "sha256": "b6e7986fbf84645727a1bc1abe4eeaba8312beac4f5fe650b48579d2f458d4f2"
+      }
+    ],
+    "outputBytes": 3853
+  },
+  "artifactSha256": "9830ceb4ed26fbc3600b722174eb995e8660dd61f4ef538f847345b7630a5dac",
+  "website": "https://preview.du18ezoxh0r24.amplifyapp.com",
+  "report": "https://preview.du18ezoxh0r24.amplifyapp.com/__launchlab/results.html",
+  "verification": {
+    "at": "2026-09-19T10:25:19.974Z",
+    "verifiedFiles": 9,
+    "anonymousStatus": 401,
+    "reportAnonymousStatus": 401,
+    "reportProjectMatched": true,
+    "browserInteractionTested": false
+  },
+  "liveVerification": {
+    "at": "2026-09-19T10:27:14.470Z",
+    "deploymentId": "dep_fe142ceeff55d349c06f",
+    "retryCreatedExtraBuildsOrJobs": false,
+    "providerCounts": {
+      "builds": 1,
+      "jobs": 1
+    },
+    "realFeedbackReadback": true,
+    "repeatedFeedbackCountedOnce": true,
+    "internalQa": {
+      "sessions": 1,
+      "primaryActions": 1,
+      "responses": 1
+    },
+    "organic": {
+      "sessions": 0,
+      "responses": 0
+    },
+    "browserInteractionTested": false
+  },
+  "agentVerification": {
+    "at": "2026-09-19T10:28:47.412Z",
+    "deploymentId": "dep_fe142ceeff55d349c06f",
+    "mcpPlanStartPollReport": "passed",
+    "separateProjectKeyRejected": true,
+    "proofRepsStillAvailable": true
+  },
+  "limitations": [
+    "No browser interaction test",
+    "No organic demand measured",
+    "No real payments or OKX listing",
+    "Core pipeline code remains in local checkout"
+  ]
+}

@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: #f5f1e7;
+  color: #1c322c;
+  font:
+    16px system-ui,
+    sans-serif;
+}
+header {
+  padding: 24px 6%;
+  border-bottom: 1px solid #d8dfd3;
+  font-weight: 700;
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.logo {
+  font-size: 32px;
+}
+.tag {
+  font-size: 10px;
+  border: 1px solid #829c90;
+  border-radius: 30px;
+  padding: 6px 10px;
+  margin-left: auto;
+}
+main {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 0 24px;
+}
+.eyebrow {
+  font: 11px monospace;
+  letter-spacing: 2px;
+  color: #547464;
+}
+h1 {
+  font-size: clamp(40px, 7vw, 76px);
+  line-height: 1.05;
+  letter-spacing: -3px;
+  margin: 22px 0;
+}
+.lead {
+  max-width: 560px;
+  line-height: 1.7;
+}
+.notice {
+  font-size: 12px;
+  color: #6c766c;
+}
+#services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin: 40px 0;
+}
+button {
+  font: inherit;
+  cursor: pointer;
+}
+#services button {
+  text-align: left;
+  background: #fffef8;
+  border: 1px solid #d6dfd3;
+  padding: 24px;
+  border-radius: 16px;
+  color: inherit;
+}
+#services button:hover {
+  border-color: #32664a;
+  background: #e4edde;
+}
+#services span {
+  font: 11px monospace;
+}
+h2 {
+  font-size: 21px;
+}
+p {
+  line-height: 1.6;
+}
+#selection {
+  background: #dcead5;
+  padding: 28px;
+  border-radius: 16px;
+}
+label {
+  display: block;
+}
+textarea {
+  width: 100%;
+  padding: 16px;
+  border: 1px solid #9cab95;
+  border-radius: 8px;
+  font: inherit;
+  margin: 12px 0;
+}
+#send {
+  background: #234c36;
+  color: white;
+  border: 0;
+  padding: 12px 20px;
+  border-radius: 9px;
+}
+footer {
+  font: 12px/1.7 monospace;
+  margin: 40px 0;
+  color: #5e7468;
+}
+@media (max-width: 700px) {
+  #services {
+    grid-template-columns: 1fr;
+  }
+  main {
+    margin-top: 36px;
+  }
+}

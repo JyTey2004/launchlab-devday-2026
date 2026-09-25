@@ -1,0 +1,10 @@
+{
+  "requestKey": "proof-reps-validation-001",
+  "repoUrl": "https://github.com/JyTey2004/launchlab-proof-reps-demo",
+  "ref": "478fd89280e407ca978c6c3425014901f70dc68e",
+  "name": "proof-reps-validation",
+  "hypothesis": "Will gym-goers show interest in these products, and would they prefer crypto or card payment? The existing checkout is simulated, so do not report sales.",
+  "audience": "Gym-goers interested in web3 clothing",
+  "allowRepairs": true,
+  "refreshBuildPackages": false
+}
