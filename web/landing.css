@@ -2529,6 +2529,16 @@ body.dialog-open {
   }
 }
 /* Keep copy and illustration within one card in the static and mobile layouts too. */
+.handoff-proof{margin-top:48px;padding:40px;border:1px solid #b78fe04a;border-radius:20px;background:linear-gradient(135deg,#251931,#120e18);scroll-margin-top:110px}
+.handoff-proof h2{font-size:clamp(32px,5vw,56px);line-height:1.1;margin:16px 0 24px;letter-spacing:-.035em}
+.handoff-proof p{max-width:850px;line-height:1.7;color:#c4b8cf}
+.handoff-proof .handoff-lead{font-size:21px;color:#f3e9ff}
+.handoff-meta{display:flex;gap:10px;flex-wrap:wrap;margin:24px 0}
+.handoff-meta span{padding:8px 14px;border-radius:999px;background:#baa0e51a;border:1px solid #bda1e636;color:#d7b7ff;font-size:13px}
+.handoff-steps{display:flex;flex-wrap:wrap;gap:10px 24px;padding-left:22px;margin:28px 0;color:#e0d3ed;font-size:14px}
+.handoff-boundary{padding-top:20px;border-top:1px solid #baa0e52b}
+.hero-note a{color:#c8a4e9;text-decoration:underline;text-underline-offset:3px}
+@media(max-width:760px){.handoff-proof{padding:26px 22px}.handoff-proof .handoff-lead{font-size:18px}.handoff-steps{display:grid;grid-template-columns:1fr 1fr}}
 .cards-ready.motion-reduced .layer-chapter {
   min-height: 0;
   padding: 40px;

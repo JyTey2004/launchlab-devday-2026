@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-25T15:47:35.394586+00:00",
+  "exportedAt": "2026-09-25T15:55:20.861642+00:00",
   "sourceBaseCommit": "cf10697da6e73e5e1197e8af9d591431678276bb",
   "sourceIncludesUncommittedWork": true,
   "knownSecretScan": "passed",
@@ -27,8 +27,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 5609,
-      "sha256": "73b69bc5c27f5bc8eb0d1e87464749ebcf8d15a6196837d02d30d7c05ddb4baf"
+      "bytes": 5486,
+      "sha256": "46982c00ed0eb4c6a8b3f83545b122595f91aa7394c5aee3226e31a730dd8ea2"
     },
     {
       "path": "assets/brand/launchlab-okx-avatar.png",
@@ -94,6 +94,11 @@
       "path": "deploy/okx-listing-review-evidence.json",
       "bytes": 433,
       "sha256": "accb8beec0bbebc7ba62c47cc5a4c4c82031d9f8f2958619075b5545be60746d"
+    },
+    {
+      "path": "deploy/okx-paid-handoff-evidence.json",
+      "bytes": 1579,
+      "sha256": "a854b45a1d6429d93d6bdeed5749ad7dfadaff097df8cab0873e2d61ab707799"
     },
     {
       "path": "deploy/okx-provider-evidence.json",
@@ -207,8 +212,8 @@
     },
     {
       "path": "docs/okx-provider-interface.md",
-      "bytes": 8472,
-      "sha256": "7b485b74f882bcb30b77cc040cae047d33496ebf49d56bb5eb29992b043d20b8"
+      "bytes": 8719,
+      "sha256": "de3fa495811ffb462971101f0ae805751f5b4409f4bd15bb186129cb29c61d03"
     },
     {
       "path": "docs/okx-registration-profile.json",
@@ -247,8 +252,8 @@
     },
     {
       "path": "docs/submission/README.md",
-      "bytes": 5516,
-      "sha256": "b18060c8519ba6404cb26b059967a7542433d4edde26f11ae71ee75c374b5289"
+      "bytes": 5399,
+      "sha256": "4357e06c29bda6cc52f1a037c49e142d76c9718d85ca13cf33b5cfd6b5b191be"
     },
     {
       "path": "docs/submission/build-period.md",
@@ -427,8 +432,8 @@
     },
     {
       "path": "judge-site/index.html",
-      "bytes": 3339,
-      "sha256": "17a54dc64400a8654f3bba65b10c55a9418b028c77ccd05931bede89fe2cafe7"
+      "bytes": 3713,
+      "sha256": "97dac578f2fbccc96a829f19a9e56e9908d8d1925b95335a00a874b24099e1ec"
     },
     {
       "path": "judge-site/judge.css",
@@ -507,8 +512,8 @@
     },
     {
       "path": "judge-site/video.html",
-      "bytes": 6533,
-      "sha256": "7378142bfc9df706472dabf95908c254987ecd44f5f867199283898860706167"
+      "bytes": 7481,
+      "sha256": "0d44f49fd121e9f7d9010521bf2bab10da1feca499bbda93a89a2a0fd5125cac"
     },
     {
       "path": "package-lock.json",
@@ -967,13 +972,13 @@
     },
     {
       "path": "web/index.html",
-      "bytes": 29363,
-      "sha256": "0b5cf9090a94339e5d9eb77c0c794f6ef4b2a766939502a2d4ab0d48e90dfc59"
+      "bytes": 31112,
+      "sha256": "26d10c04c368dab3b0828196f8359d03ab7f44a09c91266903f4a6dcd989124d"
     },
     {
       "path": "web/landing.css",
-      "bytes": 49601,
-      "sha256": "98aaf1bbe6304965193c5df149489d0b33d683d50eecf9c991c9f7cc19ea2d03"
+      "bytes": 50625,
+      "sha256": "044ca5db26f11597e6e11f89728b89cf6bc8156cddf9b5e02407005d8e860b2c"
     },
     {
       "path": "web/landing.js",

@@ -1,0 +1,35 @@
+{
+  "verifiedAt": "2026-09-25T15:38:20.563063+00:00",
+  "jobId": "0x9169162221c322328a13490ced5232bd2fb77dac2f5868caed8e478937438c9a",
+  "fee": "0.01",
+  "asset": "USDT",
+  "stage": "completed",
+  "providerAgentId": "13905",
+  "handoffSha256": "e8e9b961fd943ff9b91a0b058a69cd11b797e72973bbf7a2814d50815037c4a8",
+  "githubCommit": {
+    "expected": "23eeae76ba6839f0b49ebf2b347796bc2b1f7ccc",
+    "resolvedSha": "23eeae76ba6839f0b49ebf2b347796bc2b1f7ccc",
+    "verified": true
+  },
+  "completionAndSettlementVerified": true,
+  "newDeploymentRequested": false,
+  "settledAt": "2026-09-25T15:37:45.769Z",
+  "providerIncome": "0.01",
+  "buyerPaymentReleased": "0.01",
+  "settlementAsset": "USDT",
+  "completionTransaction": "0xc103d8fdb78503a032fc517a4e272a5ff7dea3c6c75eb507ca4de5b1b742120c",
+  "testType": "controlled self-test",
+  "stages": [
+    "funding",
+    "task creation",
+    "provider acceptance",
+    "escrow",
+    "file delivery",
+    "buyer approval",
+    "payment settlement"
+  ],
+  "scope": "Existing PROOF / REPS deployment, pinned source and recorded internal-test results. No new build, deployment, model call, tracking event or feedback submission.",
+  "remainingVerification": "One combined fresh deployment through new user feedback is still required before claiming the full product journey is proven.",
+  "listingStatus": "Earlier listing review was rejected; the paid handoff does not establish public listing approval.",
+  "evidenceSource": "Saved local receipt with buyer and provider terminal settlement confirmations; delivery file SHA-256 rechecked."
+}

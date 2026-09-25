@@ -2,12 +2,8 @@
 
 Implemented 24 September 2026. This is the backend/tool connection for a trusted
 OKX A2A provider agent. It is **not** an OKX webhook, task listener, commercial
-delivery receipt or payment integration. On 25 September, provider identity
-**13905** was registered with the free **Launch and Validation Pilot** service,
-and its local Codex communication runtime passed readiness checks. Its listing
-was subsequently submitted for review; publication and a live buyer/provider
-round trip remain pending. [Registration evidence](../deploy/okx-registration-evidence.json) ·
-[Listing submission evidence](../deploy/okx-listing-evidence.json).
+delivery receipt or payment integration. LaunchLab provider 13905 is registered. LaunchLab completed a paid agent-to-agent handoff end to end in a controlled self-test. Funding → task creation → provider acceptance → escrow → file delivery → buyer approval → payment settlement. The 0.01 USDT run returned the existing PROOF / REPS deployment and recorded internal-test results. A fresh deployment through new user feedback still needs one combined test. This is not customer traction. The earlier public listing review was rejected; listing approval remains separate. A separate X Layer testnet x402 readiness self-payment is also documented.
+[Paid handoff evidence](../deploy/okx-paid-handoff-evidence.json).
 
 [Hosted verification evidence](../deploy/okx-provider-evidence.json): all nine
 remote MCP tools were discovered over HTTPS; the existing PROOF / REPS delivery
