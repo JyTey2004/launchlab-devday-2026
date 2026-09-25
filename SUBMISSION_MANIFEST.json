@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-25T15:27:41.331504+00:00",
+  "exportedAt": "2026-09-25T15:47:35.394586+00:00",
   "sourceBaseCommit": "cf10697da6e73e5e1197e8af9d591431678276bb",
   "sourceIncludesUncommittedWork": true,
   "knownSecretScan": "passed",
@@ -28,7 +28,7 @@
     {
       "path": "README.md",
       "bytes": 5609,
-      "sha256": "8e1ff426234ac601bccb97ae4b72585244fb62563934accc236ddb3166bebb23"
+      "sha256": "73b69bc5c27f5bc8eb0d1e87464749ebcf8d15a6196837d02d30d7c05ddb4baf"
     },
     {
       "path": "assets/brand/launchlab-okx-avatar.png",
@@ -306,6 +306,21 @@
       "sha256": "2e71f1d515aba5ad7d79b151277a92767550bc627eae677f5af8bdbc92ba9fe3"
     },
     {
+      "path": "docs/video-v3/README.md",
+      "bytes": 4684,
+      "sha256": "bf687d7dd4310a940df3fedcf14f4d78087ee6d214e796405d544e6a18b03e43"
+    },
+    {
+      "path": "docs/video-v3/edit.jsx",
+      "bytes": 20586,
+      "sha256": "a992ba7bd2a71fda677932d09c92d4ee0e606d72b054c9585ab45be3eec54e87"
+    },
+    {
+      "path": "docs/video-v3/production-record.json",
+      "bytes": 1046,
+      "sha256": "df8437e243373a06886cf040900fac061f937b6cd6560694edd23410f608de28"
+    },
+    {
       "path": "docs/video/README.md",
       "bytes": 841,
       "sha256": "d596cc5b99d6d002804ac547e2bb9b5e222ef158421e0a2926947b8f099b4217"
@@ -412,8 +427,8 @@
     },
     {
       "path": "judge-site/index.html",
-      "bytes": 3272,
-      "sha256": "f9e91cb207bee1e5727386dadde0e2148219748f8c4b561e22c722b0174bd7e8"
+      "bytes": 3339,
+      "sha256": "17a54dc64400a8654f3bba65b10c55a9418b028c77ccd05931bede89fe2cafe7"
     },
     {
       "path": "judge-site/judge.css",
@@ -492,8 +507,8 @@
     },
     {
       "path": "judge-site/video.html",
-      "bytes": 5959,
-      "sha256": "d3f8ba541ccf44d8473fea8b27165ea7e99d6670f0c4e02d82b70d1bd02c6639"
+      "bytes": 6533,
+      "sha256": "7378142bfc9df706472dabf95908c254987ecd44f5f867199283898860706167"
     },
     {
       "path": "package-lock.json",

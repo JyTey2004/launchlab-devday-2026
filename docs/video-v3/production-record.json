@@ -1,0 +1,32 @@
+{
+  "video": "https://d2ol7oe51mr4n9.cloudfront.net/user_3JXhPzboza8eXlBDEZ1UPdICxcR/932b0cf9-ae50-40fa-9f5d-fb6c200b8a5b.mp4",
+  "durationSeconds": 176,
+  "width": 1920,
+  "height": 1080,
+  "fps": 24,
+  "bytes": 34374494,
+  "sha256": "30b76bbc3a3e73a31ea41544fee539d6c66b0216cf705a71c17560eb696c3463",
+  "nativeAuthoring": "Higgsedit",
+  "scenes": 19,
+  "mainWebsite": "https://launchlab.stardive.xyz/",
+  "audio": {
+    "codec": "AAC",
+    "meanVolumeDb": -18.5,
+    "peakVolumeDb": -3.5,
+    "music": "Electric Dreams \u2014 Scott Buckley, CC BY 4.0",
+    "musicSource": "https://www.scottbuckley.com.au/library/electric-dreams/",
+    "excerptStartSeconds": 45,
+    "voiceover": false
+  },
+  "reviewFrames": [
+    22,
+    28,
+    31,
+    36,
+    60,
+    120,
+    160,
+    171
+  ],
+  "review": "Native and encoded contact sheets checked for readability and framing. Homepage chapter is a labelled animated editorial reconstruction. Founder illustration and reconstructed interfaces labelled. Real internal-test captures and counts labelled."
+}

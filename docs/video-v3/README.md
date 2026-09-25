@@ -38,7 +38,7 @@ deployment. No invented macroeconomic statistic appears in the film.
 ## Production assets
 
 `edit.jsx` is the editable native composition. Input names are documented in its
-asset import list. Fonts: Geist by Vercel, SIL Open Font License (see assets/OFL.txt).
+asset import list. Fonts: Geist by Vercel, SIL Open Font License (see ../video-v2/assets/OFL.txt).
 Source screenshots and product assets remain in their original public-repo paths.
 
 Generated founder image prompt (built-in image generation):
@@ -62,7 +62,7 @@ music or claim ownership of the track. Do not register the track in Content ID.
 
 ## Rebuild
 
-Use the installed Higgsedit runtime, place named source assets in `input/` under
+Use the installed Higgsedit runtime, reuse the fonts and founder image in `../video-v2/assets/`, and place named source assets in `input/` under
 `LAUNCHLAB_FILM_DIR`, then build `edit.jsx`. Set `LAUNCHLAB_RENDER=1` for the full
 silent render; otherwise native review PNGs and the editable project are generated.
 The final mix uses the licensed music with 1-second entrance and 3-second exit fades. The soundtrack uses the section beginning 45 seconds into Electric Dreams, with loudness normalization at -16 LUFS.
