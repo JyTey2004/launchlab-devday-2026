@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-25T14:32:44.273Z",
+  "exportedAt": "2026-09-25T14:56:57.263Z",
   "sourceBaseCommit": "cf10697da6e73e5e1197e8af9d591431678276bb",
   "sourceIncludesUncommittedWork": true,
   "knownSecretScan": "passed",
@@ -27,8 +27,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 5223,
-      "sha256": "d0d6cc4882aa87cae74c5d9787b75cfe30850b415606063618474d2073861c3b"
+      "bytes": 5618,
+      "sha256": "0442f62b95c9deb2d9d3b4c5d1924e3960d42a03bc6d5f666fa94f87fd8c7f3e"
     },
     {
       "path": "assets/brand/launchlab-okx-avatar.png",
@@ -81,9 +81,19 @@
       "sha256": "5cd4a2828f58985ca298bfdb2f878f3f27d4f739b02f4e1307813e9ca649dcb6"
     },
     {
+      "path": "deploy/okx-free-task-attempt-evidence.json",
+      "bytes": 672,
+      "sha256": "02683234b93e6aeba7b07a9db04945fee24bcebba7f98f21cfb3e83c6c6c77d5"
+    },
+    {
       "path": "deploy/okx-listing-evidence.json",
       "bytes": 525,
       "sha256": "75ee9caf2a4a74c504c3fa6d228ecd905c2653fdbf284ee9509789691e2b5fdf"
+    },
+    {
+      "path": "deploy/okx-listing-review-evidence.json",
+      "bytes": 433,
+      "sha256": "accb8beec0bbebc7ba62c47cc5a4c4c82031d9f8f2958619075b5545be60746d"
     },
     {
       "path": "deploy/okx-provider-evidence.json",
@@ -237,8 +247,8 @@
     },
     {
       "path": "docs/submission/README.md",
-      "bytes": 5223,
-      "sha256": "d0d6cc4882aa87cae74c5d9787b75cfe30850b415606063618474d2073861c3b"
+      "bytes": 5516,
+      "sha256": "b18060c8519ba6404cb26b059967a7542433d4edde26f11ae71ee75c374b5289"
     },
     {
       "path": "docs/submission/build-period.md",
@@ -247,13 +257,73 @@
     },
     {
       "path": "docs/submission/judges.md",
-      "bytes": 2556,
-      "sha256": "f9baa33a3a0057b2312692f70613eb1dbafe98ce542bf9e8863b30f50501e8ba"
+      "bytes": 2676,
+      "sha256": "f66c2d9bfc0c93a297b14c1577d0dcc44f4b50527096014c87a18616f5ed87c7"
     },
     {
       "path": "docs/user-journey.md",
       "bytes": 28725,
       "sha256": "b7b44b056be8359dd7caa4b46a367602f4b7f9d024a115b49afa9a7f8e2eaa83"
+    },
+    {
+      "path": "docs/video/README.md",
+      "bytes": 841,
+      "sha256": "d596cc5b99d6d002804ac547e2bb9b5e222ef158421e0a2926947b8f099b4217"
+    },
+    {
+      "path": "docs/video/edit.jsx",
+      "bytes": 3440,
+      "sha256": "1b9989555ff14e7d2f93e46dce297da5cfed1491f52cfe594fd7b978637d4625"
+    },
+    {
+      "path": "docs/video/narration.json",
+      "bytes": 4599,
+      "sha256": "b107dbe7364338ee00d2c9b5ae5271c114cfd9607d31f548106ea8b57772e271"
+    },
+    {
+      "path": "docs/video/voice-0.aiff",
+      "bytes": 716334,
+      "sha256": "7d6900766a02090419124bb47e587f3e502d988a9e950a4002e1cff1eed35ffd"
+    },
+    {
+      "path": "docs/video/voice-1.aiff",
+      "bytes": 804726,
+      "sha256": "98a5824cade9dab17babfaa7fa7a03d5b33763becd7c909c7ab5906a6f906ad7"
+    },
+    {
+      "path": "docs/video/voice-2.aiff",
+      "bytes": 855598,
+      "sha256": "524dfed3d4a32db8e4132368676c17a8d4b2356d32760ae70266c961edc04e6f"
+    },
+    {
+      "path": "docs/video/voice-3.aiff",
+      "bytes": 768646,
+      "sha256": "82ed572b90e73b6be04f3f0fcd903072056bbb7270b29b46e5174aee7bdf8d60"
+    },
+    {
+      "path": "docs/video/voice-4.aiff",
+      "bytes": 856310,
+      "sha256": "cf339c2a2a40cd516301d79954942f3a2d7bdceb1be115ae3464ccbbf48b9cd8"
+    },
+    {
+      "path": "docs/video/voice-5.aiff",
+      "bytes": 939926,
+      "sha256": "152a36a48ce57bc4a6d38a88617891a6783a29b92fa4e4a9da3f7608cc8d440b"
+    },
+    {
+      "path": "docs/video/voice-6.aiff",
+      "bytes": 983080,
+      "sha256": "2a2d8e1480f521f396cc17e8e8f8cdbb8ba8a90546bc20058c45c94aabba108a"
+    },
+    {
+      "path": "docs/video/voice-7.aiff",
+      "bytes": 1050752,
+      "sha256": "a5d6afe9c5e5be766b380b53523d20f9b965f11973ddbf69a5676bcf762b19ca"
+    },
+    {
+      "path": "docs/video/voice-8.aiff",
+      "bytes": 1068756,
+      "sha256": "6f8cb701176267c60c825014f3fdb1e0a9d82e7e97f8460853cd7448076cfd3a"
     },
     {
       "path": "docs/website-handover.md",
@@ -302,8 +372,8 @@
     },
     {
       "path": "judge-site/index.html",
-      "bytes": 3080,
-      "sha256": "2abcd64ab2c41eebb329204d891daedfe70a09d9ddce1632edfeaafe96c9d2ff"
+      "bytes": 3268,
+      "sha256": "8da3c7c15f10509f911e115540fd21e592d579b5c349ef0ab164dcdf0769d0e1"
     },
     {
       "path": "judge-site/judge.css",
@@ -379,6 +449,11 @@
       "path": "judge-site/store/products/tee.jpg",
       "bytes": 44146,
       "sha256": "ae58e3af5704d40cc98197f6beb4dd5cda809a75794fa6d53e25d22a3a863d81"
+    },
+    {
+      "path": "judge-site/video.html",
+      "bytes": 5660,
+      "sha256": "abd310454fa9d45099f89b5f15ac8c31a2872472110911fb3c0f88700c9f70ea"
     },
     {
       "path": "package-lock.json",
