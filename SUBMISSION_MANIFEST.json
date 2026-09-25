@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-25T14:56:57.263Z",
+  "exportedAt": "2026-09-25T15:27:41.331504+00:00",
   "sourceBaseCommit": "cf10697da6e73e5e1197e8af9d591431678276bb",
   "sourceIncludesUncommittedWork": true,
   "knownSecretScan": "passed",
@@ -27,8 +27,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 5618,
-      "sha256": "0442f62b95c9deb2d9d3b4c5d1924e3960d42a03bc6d5f666fa94f87fd8c7f3e"
+      "bytes": 5609,
+      "sha256": "8e1ff426234ac601bccb97ae4b72585244fb62563934accc236ddb3166bebb23"
     },
     {
       "path": "assets/brand/launchlab-okx-avatar.png",
@@ -266,6 +266,46 @@
       "sha256": "b7b44b056be8359dd7caa4b46a367602f4b7f9d024a115b49afa9a7f8e2eaa83"
     },
     {
+      "path": "docs/video-v2/README.md",
+      "bytes": 3862,
+      "sha256": "88ca588445e0c6b4a622d4f9856990220bdabb4d20f1c2dd4e1489b527426e8a"
+    },
+    {
+      "path": "docs/video-v2/assets/Geist-Medium.ttf",
+      "bytes": 72996,
+      "sha256": "a8eefb873ba9c9020665f8a98302697ce1f3b79ab2deef6ee508c0ca6a82e876"
+    },
+    {
+      "path": "docs/video-v2/assets/Geist-Regular.ttf",
+      "bytes": 72916,
+      "sha256": "ccce59465ae5c61930ada5453834f60500fbd95084d85db63e0e65fad0125455"
+    },
+    {
+      "path": "docs/video-v2/assets/Geist-Semibold.ttf",
+      "bytes": 73048,
+      "sha256": "7171f481b121803d007f5c6c76cd9988c0d41cce4202db9a18dff9945505d36d"
+    },
+    {
+      "path": "docs/video-v2/assets/OFL.txt",
+      "bytes": 4383,
+      "sha256": "c683bfbcc7e087f5d37a54ef628f10387c451a83ddc459b151403a164ac46c90"
+    },
+    {
+      "path": "docs/video-v2/assets/founder.png",
+      "bytes": 1642049,
+      "sha256": "295e4051ea59267d987623881caf4a5de6259bbe7824aa2e5aa1ca3fad9d19b7"
+    },
+    {
+      "path": "docs/video-v2/edit.jsx",
+      "bytes": 18402,
+      "sha256": "20ccf77ade6607c4e341c7b58533d97a034f63b5f51c379294425becf7feba63"
+    },
+    {
+      "path": "docs/video-v2/production-record.json",
+      "bytes": 901,
+      "sha256": "2e71f1d515aba5ad7d79b151277a92767550bc627eae677f5af8bdbc92ba9fe3"
+    },
+    {
       "path": "docs/video/README.md",
       "bytes": 841,
       "sha256": "d596cc5b99d6d002804ac547e2bb9b5e222ef158421e0a2926947b8f099b4217"
@@ -372,8 +412,8 @@
     },
     {
       "path": "judge-site/index.html",
-      "bytes": 3268,
-      "sha256": "8da3c7c15f10509f911e115540fd21e592d579b5c349ef0ab164dcdf0769d0e1"
+      "bytes": 3272,
+      "sha256": "f9e91cb207bee1e5727386dadde0e2148219748f8c4b561e22c722b0174bd7e8"
     },
     {
       "path": "judge-site/judge.css",
@@ -452,8 +492,8 @@
     },
     {
       "path": "judge-site/video.html",
-      "bytes": 5660,
-      "sha256": "abd310454fa9d45099f89b5f15ac8c31a2872472110911fb3c0f88700c9f70ea"
+      "bytes": 5959,
+      "sha256": "d3f8ba541ccf44d8473fea8b27165ea7e99d6670f0c4e02d82b70d1bd02c6639"
     },
     {
       "path": "package-lock.json",

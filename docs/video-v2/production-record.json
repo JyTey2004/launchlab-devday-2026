@@ -1,0 +1,39 @@
+{
+  "video": "https://d2ol7oe51mr4n9.cloudfront.net/user_3JXhPzboza8eXlBDEZ1UPdICxcR/ef41adb2-6fbb-48b0-b875-165566a5fd4c.mp4",
+  "durationSeconds": 168,
+  "width": 1920,
+  "height": 1080,
+  "fps": 24,
+  "bytes": 31801503,
+  "sha256": "c9afefbc754d9081b564ffcf56c58f80503eb425bc79ab326d0de1da5f634bc6",
+  "nativeAuthoring": "Higgsedit",
+  "scenes": 18,
+  "audio": {
+    "codec": "AAC",
+    "meanVolumeDb": -22.0,
+    "peakVolumeDb": -6.6,
+    "music": "Tears In Rain \u2014 Scott Buckley, CC BY 4.0",
+    "voiceover": false
+  },
+  "reviewFrames": [
+    3,
+    8.8,
+    17,
+    22,
+    31,
+    39,
+    45,
+    47,
+    66,
+    70.5,
+    88,
+    91,
+    109,
+    112,
+    121,
+    133,
+    153,
+    165
+  ],
+  "review": "Native and encoded contact sheets checked for readability and framing. Founder illustration and reconstructed interfaces labelled. Real internal-test captures and counts labelled."
+}

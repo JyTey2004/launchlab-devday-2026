@@ -30,7 +30,7 @@ export default async ({project}) => {
  // ACT I — the difference between writing code and learning from use.
  scene(0,6,'A founder, a repository, a question',[
    F(0,0,1920,1080,I('founder.png',0,0,1920,1080),{origin:'center',animate:[{property:'scale',from:1,to:1.045,duration:6}]}),
-   R(0,0,1280,1080,{kind:'linear',angle:0,stops:[{offset:0,color:C.night,opacity:.83},{offset:1,color:C.night,opacity:0}]}),
+   R(0,0,1920,1080,{kind:'linear',angle:90,stops:[{offset:0,color:C.night,opacity:.67},{offset:.65,color:C.night,opacity:.10},{offset:1,color:C.night,opacity:0}]}),
    ...brand(true),label('FOR THE NEXT WEB3 FOUNDER',90,289,1000,C.lilac),hero("A repo isn't\na launch.",85,370,1070,340,112),T('AI-generated founder illustration',80,1020,900,28,17,'#B7AFC0')
  ],{dark:true,header:false});
  scene(6,5,'The opening match cut',[
@@ -42,12 +42,12 @@ export default async ({project}) => {
    F(80,858,1760,85,T('The missing connection: deployment → behavior → feedback.',0,0,1760,75,36,C.ink,500,{align:'center'}),enter(3))
  ]);
  scene(19,6,'LaunchLab brand reveal',[
-   I('logo.png',860,208,200,200,{fit:'contain'}),hero('LaunchLab.',130,449,1660,155,124,'#FAF6FF',.3),T('From code to a testable product.',130,638,1660,85,44,C.lilac,400,{align:'center'}),F(420,811,1080,60,T('DEPLOY  /  OBSERVE  /  LEARN',0,0,1080,60,23,'#B4A3C6',500,{align:'center',letterSpacing:5}),enter(1.9))
+   I('logo.png',860,208,200,200,{fit:'contain'}),T('LaunchLab.',130,449,1660,155,124,'#FAF6FF',500,{align:'center',motion:{by:'word',from:{opacity:0,y:22},at:.3,duration:.6,overlap:.65,easing:'house'}}),T('From code to a testable product.',130,638,1660,85,44,C.lilac,400,{align:'center'}),F(420,811,1080,60,T('DEPLOY  /  OBSERVE  /  LEARN',0,0,1080,60,23,'#B4A3C6',500,{align:'center',letterSpacing:5}),enter(1.9))
  ],{dark:true,header:false});
  // ACT II — one concrete founder story, not a catalogue of features.
  scene(25,9,'Meet the use case: PROOF REPS',[
    ...head('01 / A founder with an idea','PROOF / REPS','A Web3 gymwear concept. One small storefront. One testable question.'),
-   ...assets.map((a,i)=>F(80+i*600,403,560,538,[panel(0,0,560,538),F(14,14,532,386,I(a[0],0,0,532,386),{clip:true,radius:14}),T(a[1],27,430,505,47,30,C.ink,500),T(a[2]+' · demo pricing',27,487,505,30,20,C.muted)],{...enter(i*.45,0,60),animate:[{property:'offsetY',from:0,to:-8,duration:8}]}))
+   ...assets.map((a,i)=>F(80+i*600,403,560,538,[panel(0,0,560,538),F(14,14,532,386,I(a[0],0,0,532,386),{clip:true,radius:14}),T(a[1],27,430,505,47,30,C.ink,500),T(a[2]+' · demo pricing',27,487,505,30,20,C.muted)],enter(i*.45,0,60)))
  ],{kind:'Real demo assets · fictional products and prices'});
  scene(34,8,'Turn an idea into a hypothesis',[
    label('THE FIRST EXPERIMENT',88,209,1500,C.lilac),hero('Will people try\na crypto gymwear store?',82,302,1750,290,97),
@@ -112,7 +112,7 @@ export default async ({project}) => {
  scene(145,13,'Why OKX AI and X Layer, with implementation scope',[
    ...head('WHY OKX AI + X LAYER','A service agents can discover, request and pay for.'),
    F(80,390,855,563,[panel(0,0,855,563),label('OKX AI / DISTRIBUTION',32,33,790),T('Agent marketplace\nentry point',32,106,790,143,48,C.ink,500),T('Registered LaunchLab provider.\nHosted service is running.',32,292,790,95,30,C.muted),R(32,420,791,110,'#F7EEF3',12),T('Listing review rejected. Marketplace\nrequest → returned result remains unverified.',51,443,750,76,25,'#8F476B')],enter()),
-   F(975,390,865,563,[panel(0,0,865,563),label('X LAYER / PAYMENT RAIL',32,33,801),T('Pay-per-use\nservice access',32,106,801,143,48,C.ink,500),T('0.01 test USD₮0 payment verified\non X Layer testnet via x402.',32,292,801,95,30,C.muted),R(32,420,801,110,'#EDF4F1',12),T('Separate readiness-endpoint self-test.\nNot deployment billing or user rewards.',51,443,760,76,25,C.green)],enter(.7))
+   F(975,390,865,563,[panel(0,0,865,563),label('X LAYER / PAYMENT RAIL',32,33,801),T('Pay-per-use\nservice access',32,106,801,143,48,C.ink,500),T('0.01 test USDT0 payment verified\non X Layer testnet via x402.',32,292,801,95,30,C.muted),R(32,420,801,110,'#EDF4F1',12),T('Separate readiness-endpoint self-test.\nNot deployment billing or user rewards.',51,443,760,76,25,C.green)],enter(.7))
  ],{kind:'Integration status · 25 September 2026'});
  scene(158,10,'LaunchLab: ship, observe, learn',[
    I('logo.png',94,100,78,78,{fit:'contain'}),T('launchlab.',195,113,1350,74,53,'#FAF6FF',500),hero('Ship something\npeople can try.',89,283,1730,266,108),F(90,612,1700,92,T('Learn what to build next.',0,0,1700,82,51,C.lilac),enter(1.4)),T('Explore the working demo + source',94,796,1700,48,29,'#D2C3E0'),T('jytey2004.github.io/launchlab-devday-2026',94,861,1700,47,30,'#FAF6FF',500),T('Tey Jia Ye  /  Build a Company  /  OKX Dev Day 2026',94,944,1700,32,20,'#AB96BE'),T('Music: “Tears In Rain” — Scott Buckley · CC BY 4.0 · Edited excerpt\nscottbuckley.com.au · creativecommons.org/licenses/by/4.0',94,991,1700,65,17,'#AB96BE')

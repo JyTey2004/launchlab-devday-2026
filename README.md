@@ -1,6 +1,6 @@
 # LaunchLab
 
-[Watch the 3:15 product demonstration](https://jytey2004.github.io/launchlab-devday-2026/video.html)
+[Watch the 2:48 product film](https://jytey2004.github.io/launchlab-devday-2026/video.html)
 
 [Open the public judge walkthrough](https://jytey2004.github.io/launchlab-devday-2026/) · [Source checks](https://github.com/JyTey2004/launchlab-devday-2026/actions)
 
