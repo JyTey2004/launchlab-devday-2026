@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Try LaunchLab's founder journey with Dev Day Pulse. A browser demo with real local observations, a public repository and a simple OKX AI buyer prompt.">
+  <meta name="theme-color" content="#0b0a0e">
+  <title>Try LaunchLab — Judge playground</title>
+  <link rel="icon" href="./logo.png">
+  <link rel="stylesheet" href="./judge.css">
+  <script type="module" src="./judge.js"></script>
+</head>
+<body>
+  <a class="skip" href="#playground">Skip to the demo</a>
+  <header class="site-header">
+    <a class="brand" href="https://launchlab.stardive.xyz/" aria-label="LaunchLab homepage"><img src="./logo.png" alt="" width="34" height="34"><span>launchlab<span class="dot">.</span></span></a>
+    <nav aria-label="Page navigation"><a href="#playground">Try it</a><a href="#real-service">Use your agent</a><a href="../">Submission ↗</a></nav>
+  </header>
+  <main>
+    <section class="hero" aria-labelledby="headline">
+      <div class="hero-copy"><p class="eyebrow"><span class="spark"></span> OKX DEV DAY · JUDGE PLAYGROUND</p>
+        <h1 id="headline">Your code is ready.<br><em>Are your users?</em></h1>
+        <p class="lead">LaunchLab turns a finished project into a test people can try, then brings the evidence back to your agent.</p>
+        <div class="hero-actions"><a class="button primary" href="#playground" id="start-demo">Start the 2-minute demo <span aria-hidden="true">↗</span></a><a class="text-link" href="#real-service">Try the real OKX service →</a></div>
+        <p class="micro">Browser demo. No login, wallet or charges.</p>
+      </div>
+      <div class="orbit-card" aria-hidden="true"><div class="orb"></div><span class="orbit-word top">YOUR PROJECT</span><div class="orbit-center"><img src="./logo.png" alt="" width="48" height="48"><span>launchlab.</span></div><span class="orbit-word left">A LIVE TEST</span><span class="orbit-word right">USEFUL EVIDENCE</span><div class="orbit-note">Build → Try → Learn</div></div>
+    </section>
+
+    <section id="playground" class="playground" aria-labelledby="play-title">
+      <div class="section-intro"><div><p class="eyebrow">PLAY THE FOUNDER</p><h2 id="play-title">One project. A clear learning loop.</h2></div><span class="pill">Interactive rehearsal</span></div>
+      <ol class="step-nav" aria-label="Demo steps">
+        <li><button type="button" data-step="0" aria-current="step"><span>01</span>Your goal</button></li>
+        <li><button type="button" data-step="1"><span>02</span>Review the plan</button></li>
+        <li><button type="button" data-step="2" disabled><span>03</span>Try the product</button></li>
+        <li><button type="button" data-step="3" disabled><span>04</span>See the evidence</button></li>
+      </ol>
+      <div class="panel-wrap">
+        <section class="step-panel" data-panel="0" aria-labelledby="goal-title">
+          <div class="panel-copy"><p class="eyebrow">START WITH THE QUESTION</p><h3 id="goal-title" tabindex="-1">“Will people find this useful?”</h3><p>You have built <strong>Dev Day Pulse</strong>, a small app that helps event attendees turn an idea into an agent-service experiment brief.</p><p>Before building more, you want to see whether people can use it without help.</p><div class="goal-block"><span class="small-label">YOUR VALIDATION GOAL</span><p>Can first-time attendees create a useful experiment brief on their own?</p></div><button type="button" class="button primary" id="review-plan">Show me the plan <span aria-hidden="true">→</span></button></div>
+          <aside class="project-card"><div class="project-art"><span class="pulse-dot"></span><span>DEV DAY<br><b>PULSE</b></span><div class="wave"></div></div><div class="project-body"><span class="pill neutral">A real, public sample project</span><h4>From idea to experiment brief</h4><p>Choose a problem, pick an audience, and create a brief to test your idea.</p><a href="https://github.com/JyTey2004/launchlab-devday-pulse" target="_blank" rel="noopener">Open the sample repository ↗</a></div></aside>
+        </section>
+        <section class="step-panel" data-panel="1" aria-labelledby="plan-title" hidden>
+          <div class="panel-copy"><p class="eyebrow">YOU STAY IN CONTROL</p><h3 id="plan-title" tabindex="-1">A small test. One clear decision.</h3><p>This is an <strong>example plan</strong> for the browser rehearsal. In the paid service, LaunchLab prepares a plan for your project and asks before spending or deploying.</p><div class="approval-price"><span>Today's browser demo</span><strong>US$0</strong></div><div class="hero-actions"><button type="button" class="button primary" id="approve-demo">Yes, open the sample →</button><button type="button" class="button secondary" id="decline-demo">No, go back</button></div><p class="micro">This opens the already-built sample. It does not buy a service or deploy a new site.</p></div>
+          <div class="plan-items"><article><span class="item-icon">↗</span><div><h4>Try your product</h4><p>Open Dev Day Pulse and create a brief as an attendee would.</p></div></article><article><span class="item-icon">◉</span><div><h4>Record activity only if you allow it</h4><p>Count actions such as creating or copying a brief. Recording starts off.</p></div></article><article><span class="item-icon">✳</span><div><h4>Collect optional feedback</h4><p>Leave feedback even if you choose not to record activity.</p></div></article><article><span class="item-icon">↳</span><div><h4>See what happened</h4><p>See counts from this visit and save a small evidence summary.</p></div></article></div>
+        </section>
+        <section class="step-panel product-panel" data-panel="2" aria-labelledby="sample-title" hidden>
+          <div class="product-top"><div><p class="eyebrow">NOW YOU'RE THE ATTENDEE</p><h3 id="sample-title" tabindex="-1">Try Dev Day Pulse.</h3><p>Pick a problem and audience, create a brief, then leave feedback.</p></div><button type="button" class="button primary" id="see-results">See my evidence →</button></div>
+          <div class="try-tip"><strong>Want to see activity counts?</strong> In the sample below, open <b>Local data controls</b> and choose <b>Allow local recording</b> before creating your brief. Feedback works either way.</div>
+          <div id="sample-holder" class="sample-holder"></div>
+          <p id="sample-status" class="micro" role="status">The sample is loading. Your data stays in this browser.</p>
+          <p class="micro">If the embedded sample does not open, <a href="./sample/?test=1" target="_blank" rel="noopener">try it in its own tab ↗</a>. Activity in that tab won't appear in this page's summary.</p>
+        </section>
+        <section class="step-panel evidence-panel" data-panel="3" aria-labelledby="results-title" hidden>
+          <div class="product-top"><div><p class="eyebrow">OBSERVATIONS, NOT GUESSES</p><h3 id="results-title" tabindex="-1">Here's what you actually did.</h3><p>Browser-local observations from this page visit. These are rehearsal results.</p></div><button type="button" class="button secondary" id="back-sample">Keep trying ↗</button></div>
+          <p id="results-status" class="try-tip" role="status">Waiting for the sample's observations.</p>
+          <p class="micro">The sample retains up to 400 recent actions. The counts here include only this page visit.</p>
+          <div class="result-cards"><article><strong id="visit-count">0</strong><span>Recorded visit</span><p>A browser session, not a verified person.</p></article><article><strong id="brief-count">0</strong><span>Brief creation actions</span><p>Each successful creation counts separately.</p></article><article><strong id="feedback-count">0</strong><span>Feedback response</span><p>Updating a response doesn't create another.</p></article></div>
+          <details class="event-details"><summary>See the activity breakdown</summary><div class="table-scroll"><table><caption>Observed actions during this page visit</caption><thead><tr><th scope="col">Activity</th><th scope="col">Actions</th></tr></thead><tbody id="event-rows"></tbody></table></div></details>
+          <div class="evidence-note"><strong>What can you conclude?</strong><p>This checks whether the sample works and whether actions get recorded correctly. It does not prove customer demand. Price preferences are opinions; copies and export requests aren't purchases.</p><p>In a hosted experiment, LaunchLab brings invited testers' activity and feedback together in the private task dashboard. This public rehearsal keeps observations in your browser.</p></div>
+          <div class="hero-actions"><button type="button" class="button primary" id="save-summary" disabled>Save my demo summary ↓</button><a class="button secondary" href="#real-service">Use LaunchLab with my agent →</a><button type="button" class="text-link" id="restart-demo">Restart the walkthrough</button></div>
+          <p id="download-status" class="micro" role="status"></p>
+        </section>
+      </div>
+      <noscript><p class="try-tip">Enable JavaScript for the guided demo, or <a href="./sample/?test=1">open the sample directly</a>. The real-service prompt is below.</p></noscript>
+    </section>
+
+    <section id="real-service" class="real-service" aria-labelledby="service-title">
+      <div class="service-copy"><p class="eyebrow">READY TO TRY THE REAL SERVICE?</p><h2 id="service-title">Let your agent<br><em>handle the setup.</em></h2><p>Open your coding agent with the official OKX AI connection and sign in. Paste this prompt to ask LaunchLab to prepare a test for the public sample.</p><p class="micro">Need the connection first? Use <a href="https://web3.okx.com/onchainos/dev-docs/okxai/agent-installation-guide" target="_blank" rel="noopener">OKX's agent installation guide ↗</a>. Installation and sign-in are separate from the browser demo.</p><ol class="simple-list"><li><span>1</span>Paste the prompt into your agent.</li><li><span>2</span>Review the current service and confirm if you want to buy.</li><li><span>3</span>Review the proposed plan and any extra costs.</li><li><span>4</span>Follow your private task dashboard when it arrives.</li></ol><p class="micro">Agent 13905 · Launch and Validation Pilot. The public profile may be unavailable; use official buyer discovery. A running task is not yet a ready preview. Your agent should explain access issues. Provider readiness or provider model-funding blocks need the LaunchLab operator; judges do not need to supply provider credentials or work around them.</p><a class="text-link" href="https://github.com/JyTey2004/launchlab-devday-pulse" target="_blank" rel="noopener">Get the example repository ↗</a></div>
+      <div class="prompt-card"><div class="prompt-head"><span>YOUR FIRST MESSAGE</span><button type="button" class="copy-button" id="copy-prompt">Copy prompt <span aria-hidden="true">⧉</span></button></div><label class="sr-only" for="buyer-prompt">Simple prompt for the official OKX AI buyer workflow</label><textarea id="buyer-prompt" readonly spellcheck="false">I've built Dev Day Pulse: https://github.com/JyTey2004/launchlab-devday-pulse
+
+I want to find out whether first-time OKX Dev Day attendees can create a useful experiment brief without help, and what should improve.
+
+Use the official OKX AI buyer workflow to find LaunchLab, Agent 13905, and its Launch and Validation Pilot. Show me the current offer and costs, then ask before purchasing.
+
+Handle the setup for me: a test preview, optional usage tracking, feedback from people I invite, and a clear results report. Keep my original code unchanged and share the private task dashboard when available. Ask simple Yes/No questions for the plan and any extra costs.
+
+If anything is blocked, explain what I need to do next. Use real observations; don't call rehearsal activity customer traction.</textarea><p id="copy-status" class="micro" role="status">Works as a first message. No prior LaunchLab conversation needed.</p><a class="text-link" href="./prompt.txt" download="launchlab-judge-prompt.txt">Download the prompt ↓</a></div>
+    </section>
+
+    <section class="source-section" aria-labelledby="source-title"><div><p class="eyebrow">OPEN AND INSPECTABLE</p><h2 id="source-title">A repo you can run yourself.</h2><p>The demo uses the public Dev Day Pulse project. Brief generation uses fixed templates; it does not call an LLM.</p></div><div class="source-links"><a href="https://github.com/JyTey2004/launchlab-devday-pulse" target="_blank" rel="noopener">Example source ↗</a><a href="https://github.com/JyTey2004/launchlab-devday-2026" target="_blank" rel="noopener">Public submission source ↗</a><a href="./sample/sample-manifest.json" target="_blank" rel="noopener">Sample provenance ↗</a></div><details><summary>Run the sample locally</summary><p>Use Node 22.12 or newer. No API key, wallet or environment file needed.</p><pre><code>git clone https://github.com/JyTey2004/launchlab-devday-pulse.git
+cd launchlab-devday-pulse
+git checkout 76fa3ae06b8ea8a6a7fd1e58fa82723687296c72
+npm ci --ignore-scripts
+npm test
+npm run dev</code></pre><p>Open <a href="http://127.0.0.1:4417/?test=1">127.0.0.1:4417/?test=1</a>. This runs the sample app, not the paid LaunchLab service. Installation needs internet access.</p></details></section>
+  </main>
+  <footer><a class="brand" href="https://launchlab.stardive.xyz/">launchlab<span class="dot">.</span></a><span>Independent hackathon prototype · No OKX endorsement</span><a href="../video.html">Watch the product film ↗</a></footer>
+</body>
+</html>

@@ -10,6 +10,8 @@ LaunchLab is an OKX Dev Day prototype for founders testing web products. It dete
 
 ## Start here
 
+- [Judge playground and simple buyer prompt](docs/judge-playground.md) — a free browser rehearsal with Dev Day Pulse; optional paid OKX journey.
+- [Dev Day Pulse example repository](https://github.com/JyTey2004/launchlab-devday-pulse)
 - [LaunchLab website](https://launchlab.stardive.xyz/)
 - [Judge walkthrough](docs/submission/judges.md)
 - [Build-period changes and evidence](docs/submission/build-period.md)

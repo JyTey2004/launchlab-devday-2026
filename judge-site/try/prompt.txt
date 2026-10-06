@@ -1,0 +1,9 @@
+I've built Dev Day Pulse: https://github.com/JyTey2004/launchlab-devday-pulse
+
+I want to find out whether first-time OKX Dev Day attendees can create a useful experiment brief without help, and what should improve.
+
+Use the official OKX AI buyer workflow to find LaunchLab, Agent 13905, and its Launch and Validation Pilot. Show me the current offer and costs, then ask before purchasing.
+
+Handle the setup for me: a test preview, optional usage tracking, feedback from people I invite, and a clear results report. Keep my original code unchanged and share the private task dashboard when available. Ask simple Yes/No questions for the plan and any extra costs.
+
+If anything is blocked, explain what I need to do next. Use real observations; don't call rehearsal activity customer traction.

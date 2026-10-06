@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "title": "Dev Day Pulse — browser-local judge sample",
+  "source": {
+    "repository": "https://github.com/JyTey2004/launchlab-devday-pulse",
+    "commit": "76fa3ae06b8ea8a6a7fd1e58fa82723687296c72"
+  },
+  "builtAt": "2026-10-06T16:20:58.884Z",
+  "base": "./",
+  "files": [
+    {
+      "path": "assets/index-DcMOodvB.js",
+      "sha256": "27d873e9f01efd2264345de6ca8268dda83b84a0f3a80ee3b38e60494e8496be"
+    },
+    {
+      "path": "assets/index-DxUEDGhD.css",
+      "sha256": "ab7a085cb532fff32a426535f2bf800b7f2dd4d1ced25494014bff3a58e2ac2e"
+    },
+    {
+      "path": "index.html",
+      "sha256": "1ffe4aa9d2f70fbb5a0fab9072842218964c275e816a37c4dfa1b8c00c3ff317"
+    }
+  ],
+  "build": {
+    "tool": "Vite",
+    "version": "8.3.1",
+    "execution": "actual offline build from committed pinned source",
+    "networkUsed": false,
+    "modelCalls": 0,
+    "rebuild": "node scripts/build-judge-sample.mjs /path/to/clean/pulse",
+    "requirements": "Exact pinned commit; clean Git checkout; already installed Vite 8.3.1 dependencies. No network fallback."
+  },
+  "changes": [
+    "Separate judge-demo browser storage namespace",
+    "Sanitized current-page count adapter on real observation-store changes"
+  ],
+  "adapter": {
+    "source": "launchlab-judge-sample",
+    "version": 1,
+    "target": "same-origin actual parent only",
+    "scope": "current-page-visit",
+    "fields": [
+      "source",
+      "version",
+      "mode",
+      "scope",
+      "consent",
+      "recordedSessions",
+      "briefsCreated",
+      "feedbackResponses",
+      "eventCounts"
+    ],
+    "eventNames": [
+      "page_view",
+      "mission_started",
+      "problem_selected",
+      "brief_created",
+      "price_signal_submitted",
+      "brief_copied",
+      "brief_exported"
+    ],
+    "retainedEventLimit": 400,
+    "feedbackResponsesLimit": 1,
+    "reset": "Reload starts a new page visit with recording off and excludes earlier saved visits from parent counts. Clear local data clears the separate sample observations, turns recording off and leaves experience selections unchanged.",
+    "parentRequest": {
+      "source": "launchlab-judge-parent",
+      "version": 1,
+      "type": "request-summary"
+    }
+  },
+  "boundary": "Static interactive prototype. No OKX task, wallet payment, model call, managed deployment or shared collection. Measurements and feedback remain in this browser. Counts are sessions/actions, not verified people or customer demand. A JSON export request does not prove a saved file."
+}
