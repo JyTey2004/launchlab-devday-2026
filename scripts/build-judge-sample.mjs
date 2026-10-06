@@ -49,6 +49,36 @@ export function attachJudgeSummary(getState, browser = globalThis) {
 }
 `;
 
+// The real Pulse app is embedded inside the judge page's narrower content
+// column. Adapt only the disposable copy; retain every form and action.
+export const judgeSmallScreenStyle = String.raw`
+@media (max-width: 340px) {
+  body { min-width: 0; overflow-wrap: anywhere; }
+  .wrap { padding-left: 12px; padding-right: 12px; }
+  .site-header { height: auto; min-height: 72px; }
+  .site-header nav { display: none; }
+  .brand, .brand > span, .workspace, fieldset, .side-rail,
+  .validation-shell, .mission-card, .choice-pill, .price-option { min-width: 0; }
+  .ambient { display: none; }
+  .hero h1 { font-size: 34px; }
+  .hero-eyebrow { flex-wrap: wrap; }
+  .mission-grid, .price-grid { grid-template-columns: minmax(0, 1fr); }
+  .mission-content { min-height: 0; }
+  .choice-row { flex-direction: column; }
+  .stepper { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); padding: 16px 12px; gap: 5px; }
+  .stepper > div { min-width: 0; flex-direction: column; text-align: center; white-space: normal; }
+  .stepper i { display: none; }
+  #stage-content { padding: 20px 12px; }
+  .friction-field > label, .card-topline, .completion-strip { flex-wrap: wrap; }
+  .field-help { flex-direction: column; gap: 4px; }
+  .field-help > span:last-child, .completion-tag, .site-footer > span { white-space: normal; }
+  .completion-tag { margin-left: 0; }
+  .validation-shell { padding: 12px; }
+  .button, .text-button { max-width: 100%; white-space: normal; }
+  input, textarea, select { min-width: 0; max-width: 100%; }
+}
+`;
+
 async function filesIn(directory, base = directory) {
   const result = [];
   for (const entry of await readdir(directory, { withFileTypes: true })) {
@@ -101,6 +131,8 @@ export async function buildJudgeSample(sourcePath) {
   validation = replaceOnce(validation, '  renderCounts(); renderMode(); syncHosted();', '  renderCounts(); renderMode(); syncHosted(); judgeSummary.publish();');
   await writeFile(validationPath, validation);
   await writeFile(join(copy, 'src/judge-adapter.js'), judgeAdapterSource);
+  const stylePath = join(copy, 'src/style.css');
+  await writeFile(stylePath, await readFile(stylePath, 'utf8') + '\n' + judgeSmallScreenStyle);
   // Relative asset URLs are required when Pages hosts /try/sample/ under the
   // repository prefix. No package install, remote build or .env is involved.
   const build = await execute(process.execPath, [join(copy, 'node_modules/vite/bin/vite.js'), 'build', '--base', './'], { cwd: copy, env, timeout: 120000, maxBuffer: 1000000 });
@@ -118,7 +150,8 @@ export async function buildJudgeSample(sourcePath) {
     build: { tool: 'Vite', version: '8.3.1', execution: 'actual offline build from committed pinned source', networkUsed: false, modelCalls: 0,
       rebuild: 'node scripts/build-judge-sample.mjs /path/to/clean/pulse',
       requirements: 'Exact pinned commit; clean Git checkout; already installed Vite 8.3.1 dependencies. No network fallback.' },
-    changes: ['Separate judge-demo browser storage namespace', 'Sanitized current-page count adapter on real observation-store changes'],
+    changes: ['Separate judge-demo browser storage namespace', 'Sanitized current-page count adapter on real observation-store changes',
+      'Disposable-copy CSS adaptation below 340px: no body minimum width, secondary navigation hidden, single-column mission/price choices and wrapping narrow text. Original Pulse source unchanged.'],
     adapter: { source: 'launchlab-judge-sample', version: 1, target: 'same-origin actual parent only', scope: 'current-page-visit',
       fields: ['source','version','mode','scope','consent','recordedSessions','briefsCreated','feedbackResponses','eventCounts'],
       eventNames: ['page_view','mission_started','problem_selected','brief_created','price_signal_submitted','brief_copied','brief_exported'],

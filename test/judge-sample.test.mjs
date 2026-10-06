@@ -80,4 +80,11 @@ test('built manifest binds exact pinned source and generated asset bytes with po
   }
   const html = await readFile(new URL('index.html', base), 'utf8'); assert.ok(html.includes('./assets/')); assert.ok(!html.includes('src="/assets/'));
   assert.match(manifest.boundary, /No OKX task/); assert.match(manifest.boundary, /not verified people/);
+  assert.ok(manifest.changes.some(change => change.includes('Disposable-copy CSS adaptation below 340px') && change.includes('Original Pulse source unchanged')));
+  const cssFile = manifest.files.find(file => file.path.endsWith('.css'));
+  const css = await readFile(new URL(cssFile.path, base), 'utf8');
+  assert.match(css, /@media\s*\((?:max-width:\s*340px|width\s*<=\s*340px)\)/);
+  assert.match(css, /body\{(?=[^}]*min-width:0)(?=[^}]*overflow-wrap:anywhere)[^}]*\}/);
+  assert.match(css, /\.site-header nav\{display:none\}/);
+  assert.match(css, /\.mission-grid,\.price-grid\{grid-template-columns:minmax\(0,1fr\)\}/);
 });

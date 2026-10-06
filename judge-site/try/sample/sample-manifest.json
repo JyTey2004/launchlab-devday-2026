@@ -5,20 +5,20 @@
     "repository": "https://github.com/JyTey2004/launchlab-devday-pulse",
     "commit": "76fa3ae06b8ea8a6a7fd1e58fa82723687296c72"
   },
-  "builtAt": "2026-10-06T16:20:58.884Z",
+  "builtAt": "2026-10-06T16:36:20.750Z",
   "base": "./",
   "files": [
     {
-      "path": "assets/index-DcMOodvB.js",
+      "path": "assets/index--kxxr4HU.js",
       "sha256": "27d873e9f01efd2264345de6ca8268dda83b84a0f3a80ee3b38e60494e8496be"
     },
     {
-      "path": "assets/index-DxUEDGhD.css",
-      "sha256": "ab7a085cb532fff32a426535f2bf800b7f2dd4d1ced25494014bff3a58e2ac2e"
+      "path": "assets/index-Ccjw6RDr.css",
+      "sha256": "16fbf8ff26c40600a97adcf07fdfd42ea9fb856c78bcb72b3bb8955408fdf407"
     },
     {
       "path": "index.html",
-      "sha256": "1ffe4aa9d2f70fbb5a0fab9072842218964c275e816a37c4dfa1b8c00c3ff317"
+      "sha256": "368f62b6c35b06e2c48bd9f6164cf10a1c7657945cb0c6be5447549a6fdffc07"
     }
   ],
   "build": {
@@ -32,7 +32,8 @@
   },
   "changes": [
     "Separate judge-demo browser storage namespace",
-    "Sanitized current-page count adapter on real observation-store changes"
+    "Sanitized current-page count adapter on real observation-store changes",
+    "Disposable-copy CSS adaptation below 340px: no body minimum width, secondary navigation hidden, single-column mission/price choices and wrapping narrow text. Original Pulse source unchanged."
   ],
   "adapter": {
     "source": "launchlab-judge-sample",
